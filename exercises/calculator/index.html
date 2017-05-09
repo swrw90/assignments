@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" , href="styles.css">
+</head>
+
+<body>
+    <table>
+        <form name="calculator">
+            <tr>
+                <td>
+                    <input type="button" value="1">
+                </td>
+                <td>
+                    <input type="button" value="2" onClick="document.calculator.ans.value+='2'">
+                </td>
+                <td>
+                    <input type="button" value="3" onClick="document.calculator.ans.value+='3'">
+                </td>
+                <td>
+                    <input id="addBtn" type="button" value="+" onClick="addNum()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="4" onClick="document.calculator.ans.value+='4'">
+                </td>
+                <td>
+                    <input type="button" value="5" onClick="document.calculator.ans.value+='5'">
+                </td>
+                <td>
+                    <input type="button" value="6" onClick="document.calculator.ans.value+='6'">
+                </td>
+                <td>
+                    <input id="subBtn" type="button" value="-" onClick="subNum()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="7" onClick="document.calculator.ans.value+='7'">
+                </td>
+                <td>
+                    <input type="button" value="8" onClick="document.calculator.ans.value+='8'">
+                </td>
+                <td>
+                    <input type="button" value="9" onClick="document.calculator.ans.value+='9'">
+                </td>
+                <td>
+                    <input id="mulBtn" type="button" value="*" onClick="mulNum()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="divBtn" type="button" value="/" onClick="divNum()">
+                </td>
+                <td>
+                    <input type="button" value="0" onClick="document.calculator.ans.value+='0'">
+                </td>
+                <td>
+                    <input type="button" value="=" onClick="document.calculator.ans.value=eval(document.calculator.ans.value)">
+                </td>
+                <br><input type="text" name="ans" value="">
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+        </form>
+    </table>
+</body>
+
+</html>

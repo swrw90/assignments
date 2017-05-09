@@ -1,0 +1,42 @@
+body {
+    background-image: url("https://images.freecreatives.com/wp-content/uploads/2016/02/Old-Paper-Background-For-Free-.jpg");
+    background-size: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+img {
+    float: left;
+    padding: :20px;
+    height: 150px;
+    left: 550px;
+    top: 300px;
+    z-index: -1;
+    width: 500px;
+    
+}
+
+.plswork {
+    display: block;
+}
+
+.column1 {
+    float: left;
+    width: 33%;
+}
+
+.column2 {
+    float: right;
+    width: 33%;
+}
+
+.column3 {
+    display: inline-block;
+    width: 33%;
+}

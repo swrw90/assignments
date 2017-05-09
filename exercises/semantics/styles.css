@@ -1,0 +1,112 @@
+header {
+    text-align: center;
+    color: darkred;
+    font-size: 60px;
+    font-family: Futura;
+}
+
+body {
+    background-image: url("http://eskipaper.com/images/night-photography-background-1.jpg");
+}
+
+p {
+    font-size: 20px;
+    font-family: Futura;
+    text-align: center;
+    margin-bottom: 1%;
+    margin-left: 25%;
+    color: darkred;
+    width: 40%;
+}
+
+img.resize1 {
+    border: solid 5%;
+    border-color: darkblue;
+    width: 30%;
+    top: 70%;
+    float: inherit;
+    padding-left: 10%;
+    padding-top: 5%;
+}
+
+img.resize2 {
+    width: 30%;
+    top: 70%;
+    float: left;
+    padding-left: 15%;
+    padding-top: 5%;
+}
+
+a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.sidenav {
+    height: 100%; 
+    width: 0; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0;
+    left: 0;
+    background-color: #111; 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.5s; 
+}
+.sidenav a {
+    padding: 8px 8px 8px 32pxs
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+nav1 {
+    font-family: Futura;
+    position: absolute;
+    left: 10%;
+    top: 9%;
+    z-index: -1;
+    padding: 5%;
+}
+
+nav2 {
+    text-decoration: none;
+    font-family: Futura;
+    color: darkred;
+    position: absolute;
+    left: 28%;
+    top: 9%;
+    z-index: -1;
+    padding: 5%;
+}
+
+nav3 {
+    text-decoration: none;
+    font-family: Futura;
+    color: darkred;
+    position: absolute;
+    left: 48%;
+    top: 9%;
+    z-index: -1;
+    padding: 5%;
+}
+
+nav4 {
+    text-decoration: none;
+    font-family: Futura;
+    color: darkred;
+    position: absolute;
+    left: 70%;
+    top: 9%;
+    z-index: -1;
+    padding: 5%;
+}
+
+footer {
+    font-family: Futura;
+    text-align: center;
+    margin-top: 20%;
+    margin-right: 10%;
+}

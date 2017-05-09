@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "SuperMario256";
+    src: url("SuperMario256.ttf") format("truetype");
+    
+}
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+    padding: 0%;
+}
+
+.container-fluid {
+    width: 75%;
+    align-content: center;
+}
+
+.yellow-header {
+    background-color: #ffda09;
+    height: 85px;
+    z-index: -1;
+}
+.luigi {
+      text-align:left;
+    color: #eb1f22;
+    font-family: SuperMario256;
+    font-size: 14px;
+}
+
+.red-box {
+    background-color: #eb1f22;
+    height: 325px;
+    z-index: -1;
+}
+
+.luigi-pic {
+    background-image: url("https://coursework.vschool.io/content/images/2015/07/luigi.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: none;
+    margin: 30px auto;
+    height: 250px;
+    width: 250px;
+}
+.about-me {
+   
+}
+
+.white-box {
+    height: 200px;
+    background-color: white;
+    z-index: -1;
+}
+.about-p {
+    float: none;
+    margin: auto;
+   
+}
+.about-p, p{
+    text-align: center;
+    color: #eb1f22;
+    font-family: SuperMario256;
+    font-size: 14px;
+    
+}
+
+h3 {
+    text-align: center;
+    color: #eb1f22;
+    font-family: SuperMario256;
+}
+
+.yellow-footer {
+    height: 85px;
+    background-color: #ffda09;
+    z-index: -1;
+}
+
+.mushroom-pic {
+    background-image: url(https://coursework.vschool.io/content/images/2015/07/greenmushroom.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    float: right;
+    height: 85px;
+    width: 85px;
+    
+}
+/*
+
+@font-face {
+    font-family: SuperMario256;
+    src: url(); 
+*/
+}
+
+/*
+ border: 2px solid;
+   border-color: white;*/

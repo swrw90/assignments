@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <form>
+
+        <table>
+            <tr>
+                <div id="h1">
+                    <h1>Travel Form</h1>
+                </div>
+            </tr>
+            <tr>
+                <td>
+                    <input id="text" placeholder="Full Name">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="phoneNumber" placeholder="Phone Number" class="resizedTextbox">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="date" placeholder="Date Of Birth" class="resizedTextbox">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <p id="Male"> Male <input id="gender1" type="radio" onclick="maleBox()"></p>
+
+                    <p id="Female">Female <input id="gender2" type="radio" onclick="femaleBox()"></p>
+                </td>
+            </tr>
+
+            <tr class="Diet">
+                <!--                    <p id="Diet Spec.">Dietary Specifications</p>-->
+                <td>
+                    <p class="Vegetarian">
+                        Vegetarian <input id="Vegetarian" type="radio" onclick="vegBox()">
+                    </p>
+                </td>
+                <td>
+                    <p class="Kosher">
+                        Kosher <input id="Kosher" type="radio" onclick="kosherBox()">
+                    </p>
+                </td>
+                <td>
+                    <p class="Lactose">
+                        Lactose <input id="Lactose" type="radio" onclick="lactoseBox()">
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <footer class="footer">
+                        <button id="submitBtn" onclick="submitClick()">Submit</button>
+                    </footer>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>

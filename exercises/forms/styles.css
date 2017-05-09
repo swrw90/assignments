@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;  
+}
+#h1 {
+    display: flex;
+    justify-content: center;
+    
+}
+
+table{
+     margin:auto;
+    float:none;  
+}
+#text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#phoneNumber {
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+#male {
+  display: flex;
+    justify-content: center;
+};
+
+#gender1 {
+    float: right;
+}
+
+#efeamale {
+    
+}
+
+#date {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.resizedTextbox {
+    width: 100%;
+    height: 20px;
+    padding: 1px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
