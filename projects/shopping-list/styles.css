@@ -1,0 +1,18 @@
+h1 {
+    text-align: center;
+}
+
+#flex-box {
+    display: flex;
+    justify-content: center;
+}
+
+#itemList {
+    display: flex;
+    align-content: bottom;
+}
+
+.deleteBtn {
+    float: left;
+    margin-right: 10px;
+}

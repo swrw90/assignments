@@ -1,0 +1,181 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    margin: auto;
+    display: block;
+}
+
+body {
+    font-family: avenir, sans-serif;
+}
+
+#header {
+    margin-top: 1%;
+}
+
+.container-fluid {
+    width: 75%;
+    align-content: center;
+    margin: 0px;
+}
+
+.categoriesMenu {
+    width: 35%;
+    height: 100%;
+}
+
+.dropdown-content {
+    width: 50%;
+}
+
+.dropdown-content,
+a {
+    width: 50%;
+    color: #999;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover,
+.dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.display{
+    display: block;
+}
+.hide{
+    display:none;
+}
+
+/*
+.categoriesBtn {
+    width:50%;
+
+}
+
+.fashionBtn{
+    width:50%;
+    text-decoration: none;
+}
+
+.beautyBtn{
+    width:50%;
+}
+
+.lifestyleBtn{
+    width:50%;
+}
+
+.maternityBtn{
+    width:50%;
+}
+
+.recipesBtn{
+    width:50%;
+}
+
+.aboutBtn {
+    width:50%;
+
+}
+*/
+
+#navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#navLinks a {
+    font-family: avenir, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    padding-right: 20px;
+}
+
+#searchBox {
+    background-image: url("http://www.pathpoint.org/frontend/default/images/search-icon.png");
+    background-repeat: no-repeat;
+    text-indent: 10px;
+    color: black;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    width: 100%;
+    border: 1px solid #999;
+    height: 30px;
+}
+
+#searchBox::-webkit-input-placeholder {
+    color: #999;
+    /*    font-weight: bold;*/
+}
+
+.element::-moz-placeholder {
+    color: #999;
+}
+
+.element:-ms-input-placeholder {
+    color: #999;
+}
+
+.element:-o-input-placeholder {
+    color: #999;
+}

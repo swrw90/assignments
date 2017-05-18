@@ -1,0 +1,6 @@
+#flex-box {
+    display: inline-flex;
+    justify-content: flex-start;
+    width: 80%;
+    float: left
+}

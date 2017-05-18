@@ -1,0 +1,27 @@
+.box {
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+    margin: auto;
+    border: 1px solid #333;
+    box-shadow: 10px 10px 5px 0 #999;
+    border-radius: 10%;
+    transition: all .5s ease-in-out .3s; /*<--this is relating to the transition array down below and not the trans commented out.
+    /*transition property and duration specifies what property is effected and the transition duration*/
+/*
+    transition-property: all;
+    transition-duration: .5s;
+    transition-timing-function: ease-in-out;
+    transition-delay: .5s;    
+*/ 
+    /*Instead of writing ^all of these^ use the following*/
+}
+
+transition: {[transition-property] [transition];
+}
+
+.box:hover {
+    box-shadow: none;
+    border-radius: 0;
+    background-color:bisque;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Name Badge</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body ng-controller="MyCtrl">
+    <div class="container-fluid">
+        <form>
+            <div class="row">
+                <div class="col-sm-offset-1 col-sm-4">
+                    <input id="firstName" type="text" placeholder="First Name"></input>
+                </div>
+                <div class="col-sm-offset-1 col-sm-4">
+                    <input id="lastName" type="text" placeholder="Last Name"></input>
+                </div>
+                <div class="col-sm-offset-1 col-sm-4">
+                    <input id="email" type="text" placeholder="Email"></input>
+                </div>
+                <div class="col-sm-offset-1 col-sm-4">
+                    <input id="birthplace" placeholder="Place of Birth"></input>
+                </div>
+                <div class="col-sm-offset-1 col-sm-4">
+                    <input id="phone" placeholder="Phone Number"></input>
+                </div>
+                <div class="col-sm-offset-1 col-sm-4">
+                    <input id="favFood" placeholder="Favorite Food"></input>
+                </div>
+                <div class="col-sm-offset-1 col-sm-11">
+                    <input id="aboutMe" placeholder="Tell us about yourself..."></input>
+                </div>
+                <div class="col-sm-offset-4 col-sm-3">
+                    <button id="submitBtn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </div>
+    <div id="header">
+        <header>Badge</header>
+    </div>
+    <div class="container-fluid">
+
+        <p id="name"></p>
+        <p id="phoneNumber"></p>
+        <p id="placeOfBirth"></p>
+        <p id="food"></p>
+        <p id="emailAddress"></p>
+        <p id="about"></p>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

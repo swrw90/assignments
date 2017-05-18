@@ -1,0 +1,50 @@
+{
+    "menu": {
+        "appetizers": {
+            "veggie": {
+                name: "mixed veggies",
+                ingredients: ["squash", "carrot", "eggplant", ]
+                description: "various cooked veggies",
+            },
+            "soup": {
+                name: "tomato",
+                ingredients: ["tomato", "basil", "black pepper", ]
+                description: "hot tomato soup",
+            },
+        },
+        "drinks": {
+            "beer": {
+                name: "rhinegeist",
+                ingredients: ["hops", ]
+                description: "IPA",
+            },
+        },
+        "cold sandwich": {
+            "big jon": {
+                name: "big jon",
+                ingredients: ["roast beef", "cheese", "lettuce", ]
+                description: "roast beef sub",
+            },
+        },
+        "hot sandwich": {
+            "sloppy joe": {
+                name: "sloppy joe",
+                ingredients: ["beef", "sauce", ]
+                description: "extra sloppy"
+            },
+        }
+        "desserts": {
+            "cheese cake": {
+                name: "cheese cake",
+                ingredients: ["cream cheese", "chocolate", ]
+                description: "rich",
+            },
+        },
+    },
+};
+
+let menu = json["menu"]
+
+for (var i = 0; i < menu["cold sandwich"].length; i++) {
+    console.log(menu["cold Sammy"][i]);
+}

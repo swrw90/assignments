@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ng model</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body ng-controller="MyCtrl">
+    <input ng-model="guitar.year" type=text>
+    <p class="well well-sm">{{guitar.year}}</p>
+    <input ng-model="guitar.brand" type=text>
+    <p class="well well-md">{{guitar.brand}}</p>
+    <input ng-model="guitar.model" type=text>
+    <p class="well">{{guitar.model}}</p>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

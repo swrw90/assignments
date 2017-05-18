@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NG Repeat</title>
+</head>
+
+<body ng-controller="MyCtrl">
+    <table>
+        <tr ng-repeat="kill in player.kills">
+            <td>Handle: {{kill.handle}}</td>
+            <td>Rank: {{kill.rank}}</td>
+            <td ng-repeat='member in kill.clan'>clan member: {{member}}</td>
+        </tr>
+    </table>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--COMPONENTS OF AN NG-REPEAT-->
+
+
+<!--<tag ng-repeat='item in array'></tag>-->
+<!--
+//ng-repeat only loops through arrays NOT OBJECTS
+// if it was an object with an array inside
+-->
+<!--<tag ng-repeat='item in object.array'></tag>-->
+
+<!--
+//for an array of objects {{item.property}}
+//for an array of strings or numbers {{item}}
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
