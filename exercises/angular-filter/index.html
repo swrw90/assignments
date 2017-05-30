@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Convert Temperuratures</title>
+</head>
+
+<body>
+    <div ng-controller="MainCtrl">
+        <div ng-repeat="temp in temps">
+            {{ temp | convert: "°F"}}
+        </div>
+        <div>
+            <select ng-model="selectedSymbol" ng-options="symbol for symbol in degrees"></select>
+            <h1> {{ weather | convert: selectedSymbol}} </h1>
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
