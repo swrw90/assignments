@@ -1,0 +1,1 @@
+Anytime you have a for loop nested in another for loop, mind the i declaration, use j for the second loop.

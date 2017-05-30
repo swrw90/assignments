@@ -1,0 +1,13 @@
+strings/variable = pass by reference
+objects/arrays = pass by reference
+
+var someObject = {
+    property: "value"
+};
+
+var anotherObject = someObject;
+
+anotherObject.property = "some other value";
+
+
+console.log(someObject);

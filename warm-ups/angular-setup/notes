@@ -1,0 +1,19 @@
+Module View Controller
+Imagine a room, within in the room there's a ball, a camera and a photographer. 
+Ball=Module or the data
+Camera=View or html, decides to see the data in a certain way
+Photographer=Controller decides how to view that data.
+
+Model and view do not communicate, Controller gets data from the model and displays it on the view/html. 
+
+Angular is MVW or MV*
+W means w/e, literally, Angular has controllers, services/factories, directives, filters.
+Many tools to decide how it's displayed. 
+
+
+*Emmet Aside*
+=============
+ ul>li*5 Creates a parent with 5 children
+ 
+div.form-group>input.form-control  Creates...
+<div class="form-group"><input type="text" class="form-control"></div>

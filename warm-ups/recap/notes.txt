@@ -1,0 +1,15 @@
+Primitave Data Types: Passed by value
+Primitive: Strings, Numbers, Boolean. 
+Immutable(never changes value, it changes location). 
+
+Composite Data Types: Not immutable, 
+Composite: Array, Objects
+
+Complex Data Type: Func, loops, if. 
+Operators
+
+Conditionals
+
+Loops
+
+Functions

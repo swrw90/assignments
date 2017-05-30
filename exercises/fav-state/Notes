@@ -1,0 +1,15 @@
+<textarea ng-model="name" contenteditable="true">
+<div ng-bind="name"></div>
+
+directives: ng-model, ng-bind, 
+
+<div ng-init="language='AngularJS'">
+<input type 
+{{ language }}
+</div>
+
+
+ <div ng-init="myFavBand=[{band:'Floyd', year:'1965'}, {band:'ledZep', year:'1970'}]"></div>
+
+<p ng-repeat="artist in myFavBand">
+   band: {{artist.year}} </p>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="starWars">
+
+<head>
+    <meta charset="UTF-8">
+    <title>star wars angular</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div ng-controller="mainCtrl">
+<!--        <div ng-repeat="intro in opening"> -->
+        <p> {{opening.opening_crawl}} </p></div>
+
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!--
+
+
+<body ng-controller="MyCtrl">
+    <table>
+        <tr ng-repeat="kill in player.kills">
+            <td>Handle: {{kill.handle}}</td>
+            <td>Rank: {{kill.rank}}</td>
+            <td ng-repeat='member in kill.clan'>clan member: {{member}}</td>
+        </tr>
+    </table>
+-->

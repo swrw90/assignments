@@ -1,0 +1,115 @@
+/*INDEX PAGE*/
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.nav-links a {
+    font-family: Helvetica;
+    text-decoration: none;
+    font-size: 20px;
+    color: #8f8e99;
+    padding-right: 15px;
+}
+
+
+/*HOME PAGE*/
+
+.h1-buckeye {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: -10%;
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 1px 1px 2px black;
+    color: #8f8e99;
+}
+
+.parent {
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.image1 {
+    position: relative;
+    top: -27px;
+    height: 100%;
+    left: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    width: 100%;
+}
+
+.image2 {
+    position: absolute;
+    top: 37%;
+    left: 23%;
+    opacity: .5;
+}
+
+
+/*ABOUT PAGE*/
+
+#aboutText {
+    text-align: center;
+    font-family: Helvetica;
+    width: 50%;
+    font-size: 20px;
+    color: #8f8e99;
+    /*    padding-right: 15px;*/
+    margin: auto;
+}
+
+.h1 {
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 1px 1px 2px black;
+    color: #8f8e99;
+    /*    font-family: Josefin Slab;*/
+    margin: -18%;
+}
+
+.aboutBgImg {
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ohio-state {
+    position: absolute;
+    top: 114%;
+    left: 29%;
+    height: 100%;
+    opacity: .5;
+    margin: auto;
+    align-content: center;
+    float: none;
+}
+
+
+/*WHYILOVE PAGE*/
+
+.whyBgImg {
+    height: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.why-h1 {
+    text-align: center;
+    font-size: 80px;
+    text-shadow: 1px 1px 2px black;
+    color: #8f8e99;
+    /*    font-family: Josefin Slab;*/
+    margin: -18%;
+}
+
+#resize {
+    height: 200px;
+    margin:auto;
+}

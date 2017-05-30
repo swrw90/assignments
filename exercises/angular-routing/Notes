@@ -1,0 +1,15 @@
+Single Page Application "SPA"
+One page of HTML, does everything on that one page. 
+
+angular js does not automatically have routting, get the google ng route cdn
+
+service factory 
+
+.config=Allows you to set defaults or customize the code before it runs?
+provider: Something that only gets ran in the config blcok.
+
+$routeProvider helps to 
+
+ng route injects route provider into  config
+
+rou

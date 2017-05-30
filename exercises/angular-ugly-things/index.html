@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="uglyThings">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Ugly Things</title>
+</head>
+
+<body>
+    <div ng-controller="MainCtrl">
+        <input ng-model="uglyThing.title" type="text" placeholder="Title">
+        <input ng-model="uglyThing.imgUrl" type="text" placeholder="Img URL">
+        <input ng-model="uglyThing.description" type="text" placeholder="Description">
+
+        <button type="submit" value="submit" ng-click="createUglyThings(uglyThing)">Submit</button>
+
+        <div ng-repeat="ugly in uglyThings">
+            <h2> {{ugly.title}}</h2>
+            <img ng-src="{{ugly.imgUrl}}">
+            <p> {{</p>
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

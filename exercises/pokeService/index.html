@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="pokeList">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <div ng-controller="MainCtrl">
+        <input ng-model="inputPoke" type="text" placeholder="Pokémon Name">
+        <button type="submit" value="submit" ng-click="addPoke(inputPoke)">Add Pokémon</button>
+        <div>
+            <ul id="displayPoke">
+                <li ng-repeat="poke in pokemon">
+                    {{poke}}
+                </li>
+            </ul>
+        </div>
+        <input ng-model="name" type="text" placeholder="Remove Pokémon">
+        <button type="submit" value="submit" ng-click="delPoke(name)">Delete Pokémon</button>
+    </div>
+
+    <!--   LIBRARIES-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js">
+    </script>
+    <!--    APP-->
+    <script src="app.js"></script>
+</body>
+
+</html>
