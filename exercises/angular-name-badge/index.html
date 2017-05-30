@@ -8,55 +8,66 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body ng-controller="MyCtrl">
+<body ng-controller="mainCtrl">
     <div class="container-fluid">
         <form>
             <div class="row">
                 <div class="col-sm-offset-1 col-sm-4">
-                    <input id="firstName" type="text" placeholder="First Name"></input>
+                    <input type="text" placeholder="First Name" ng-model="user.firstName"></input>
                 </div>
                 <div class="col-sm-offset-1 col-sm-4">
-                    <input id="lastName" type="text" placeholder="Last Name"></input>
+                    <input type="text" placeholder="Last Name" ng-model="user.lastName"></input>
                 </div>
                 <div class="col-sm-offset-1 col-sm-4">
-                    <input id="email" type="text" placeholder="Email"></input>
+                    <input type="text" placeholder="Email" ng-model="user.emailAdd"></input>
                 </div>
                 <div class="col-sm-offset-1 col-sm-4">
-                    <input id="birthplace" placeholder="Place of Birth"></input>
+                    <input placeholder="Place of Birth" ng-model="user.birth"></input>
                 </div>
                 <div class="col-sm-offset-1 col-sm-4">
-                    <input id="phone" placeholder="Phone Number"></input>
+                    <input placeholder="Phone Number" ng-model="user.phoneNumber"></input>
                 </div>
                 <div class="col-sm-offset-1 col-sm-4">
-                    <input id="favFood" placeholder="Favorite Food"></input>
+                    <input placeholder="Favorite Food" ng-model="user.favoriteFood"></input>
                 </div>
                 <div class="col-sm-offset-1 col-sm-11">
-                    <input id="aboutMe" placeholder="Tell us about yourself..."></input>
+                    <input id="aboutMe" placeholder="Tell us about yourself..." ng-model="user.about"></input>
                 </div>
                 <div class="col-sm-offset-4 col-sm-3">
-                    <button id="submitBtn">Submit</button>
+                    <button ng-click="submit(user)" id="submitBtn">Submit</button>
                 </div>
             </div>
         </form>
     </div>
-    </div>
+
     <div id="header">
-        <header>Badge</header>
+        <header>Badge:</header>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid badge-head">
+        <div class="row">
+            <div id="name" class="col-sm-offset-1 col-sm-4"> Name:
+                <p ng-repeat="info in userInfo"> {{info.firstName}} {{info.lastName}} </p>
+            </div>
+            <div id="email" class="col-sm-offset-1 col-sm-4"> Email:
+                <p ng-repeat="info in userInfo" id="emailAddress"> {{info.emailAdd}} </p>
+            </div>
+            <div id="birthplace" class="col-sm-offset-1 col-sm-4">
+                <p ng-repeat="info in userInfo" id="placeOfBirth"> Place Of Birth: {{info.birth}} </p>
+            </div>
+            <div id="phone" class="col-sm-offset-1 col-sm-4"> Phone Number:
+                <p ng-repeat="info in userInfo" id="phoneNumber"> {{info.phoneNumber}} </p>
+            </div>
+            <div id="favoriteFood" class="col-sm-offset-1 col-sm-4"> Favorite Food:
+                <p ng-repeat="info in userInfo" id="food"> {{info.favoriteFood}} </p>
+            </div>
+            <div id="about" class="col-sm-offset-1 col-sm-4"> About Me:
+                <p ng-repeat="info in userInfo" id="aboutParagraph"> {{info.about}} </p>
+            </div>
+        </div>
 
-        <p id="name"></p>
-        <p id="phoneNumber"></p>
-        <p id="placeOfBirth"></p>
-        <p id="food"></p>
-        <p id="emailAddress"></p>
-        <p id="about"></p>
 
-    </div>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
-    <script src="app.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>

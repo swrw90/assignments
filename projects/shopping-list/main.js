@@ -16,14 +16,17 @@ function addItem() {
     var items = $("ul#items");
 
     var itemToBuy = itemInput.val();
+    var itemId = itemToBuy.replace(/\s/g, '');
+
     itemInput.val("")
 
-    var list = $("<li id=" + itemToBuy + ">" + itemToBuy + "<button class='deleteBtn' type='button' onclick='deleteItem(" + itemToBuy + ")" + "'>X</button>" + "</li>");
+    //    li id can't have spaces'
+  
+    var list = $("<li id=" + itemId + ">" + itemToBuy + "<button class='deleteBtn' type='button' onclick='deleteItem(" + itemId + ")" + "'>X</button>" + "</li>");
     items.append(list);
- 
+
 };
 
 function deleteItem(id) {
     $(id).remove();
 }
-

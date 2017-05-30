@@ -1,28 +1,21 @@
-/*
-* {
-    box-sizing: border-box;
-    font-size: 0px;
-    padding: 0%;
-}
-*/
-
 .container-fluid {
-   height: auto;
+    height: auto;
     width: 60%;
     align-content: center;
     border: solid black 1px;
     margin-top: 5%;
     border-radius: 5px;
-} 
+}
+
 input {
-    width:100%;
+    width: 100%;
     margin-top: 4%;
 }
 
 #submitBtn {
     margin-top: 4%;
     margin-bottom: 4%;
-    width:100%;
+    width: 100%;
 }
 
 #aboutMe {
@@ -30,6 +23,59 @@ input {
 }
 
 #header {
-    border: 1px, solid, #606060; 
-    background-color:#606060;
+    border: 1px, solid, #606060;
+    background-color: #606060;
+    color: white;
+    width: 60%;
+    padding: .5%;
+    border-radius: 5px;
+    margin: 1% auto;
+    float: none;
+}
+
+.badge-head {
+    margin: auto;
+    height: 360px;
+}
+
+#name {
+    width: 40%;
+    /*    border: 1px solid black;*/
+    margin: 1% 5%;
+    0% 3%;
+}
+
+#email {
+    width: 40%;
+    /*    border: 1px solid red;*/
+    margin: 1% 5%;
+    0% 3%;
+}
+
+#birthplace {
+    width: 40%;
+    /*    border: 1px solid blue;*/
+    margin: 1% 5%;
+    0% 3%;
+}
+
+#phone {
+    width: 40%;
+    /*    border: 1px solid green;*/
+    margin: 1% 5%;
+    0% 3%;
+}
+
+#favoriteFood {
+    width: 40%;
+    /*    border: 1px solid purple;*/
+    margin: 1% 5%;
+    0% 3%;
+}
+
+#about {
+    width: 80%;
+    /*    border: 1px solid orange;*/
+    margin: 1% 5%;
+    0% 3%;
 }

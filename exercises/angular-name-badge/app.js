@@ -1,5 +1,10 @@
 var app = angular.module("MyApp", []);
-app.controller("MyCtrl", ["$scope", function ($scope) {
+app.controller("mainCtrl", ["$scope", function ($scope) {
 
-
-            }]);
+    $scope.userInfo = [];
+    $scope.submit = function (user) {
+        $scope.userInfo.push(user);
+    };
+    $scope.user = {};
+ 
+}]);

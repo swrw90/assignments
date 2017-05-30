@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="styles.css">;
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="styles.css">
 
 <head>
     <meta charset="UTF-8">
@@ -8,12 +9,19 @@
 </head>
 
 <body>
-    <div id="flex-box">
-        <p id="results"></p>
-<!--        <p id="results1"></p>-->
-    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Pokémon List</h2>
+                <ul id="pokeList">
+                </ul>
+            </div>
+        </div>
+
 </body>
 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <script src="main.js"></script>
 
 </html>

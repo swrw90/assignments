@@ -1,12 +1,5 @@
-var app = angular.module(myApp, []);
+var app = angular.module("MyApp", []);
 app.controller("mainCtrl", ["$scope", function($scope){
-$scope.test = "test";
-$scope.fruit = {category: "fruit",
-              apples: {
-                  ["green apple", "red delicious", "granny smith"], 
-              },
-                tomatoes: {
-                    ["cherry", "roma", "beefsteak"]
-                },
-               }
+
+    
 }]);  

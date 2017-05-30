@@ -7,12 +7,8 @@ xhr.onreadystatechange = function () {
         var data = JSON.parse(xhr.responseText);
         var pokeArray = data.objects[0].pokemon;
         for (var i = 0; i < pokeArray.length; i++) {
-            pokeName.push((pokeArray[i].name));
-//            pokeSrc.push((pokeArray[i].resource_uri));
+            $("#pokeList").append("<li>" + pokeArray[i].name + "</li>")
         }
-
-        document.getElementById("results").innerHTML = pokeName;
-//        document.getElementById("results1").innerHTML = pokeSrc;
     }
 }
 
