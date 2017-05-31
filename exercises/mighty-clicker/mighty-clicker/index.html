@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MightyClicker">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mighty Clicker</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div ng-controller="MainCtrl">
+        <div class="container">
+
+            <h2>Score: {{blueScore}} </h2>
+            <button type="button" class="btn btn-primary" ng-model="blue" ng-click="scoreboard1()"></button>
+            <h2>Score: {{redScore}}</h2>
+            <button type="button" class="btn btn-danger" ng-model="red" ng-click="scoreboard2()"></button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
