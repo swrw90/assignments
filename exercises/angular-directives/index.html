@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="MyApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Angular-Directives</title>
+</head>
+
+<body ng-controller="MainCtrl">
+
+    <my-info></my-info>
+    <!--    <div my-info></div>-->
+    <!--    <div class="my-info"></div> does not work-->
+
+<!--    <div my-info="allen"></div>-->
+<!--    <div my-info="bif"></div>-->
+    
+<!--    //attribute1-->
+    <div on-enter=""></div>
+<!--  <div my-info="allen"></div>-->
+  
+    <input type="text" ng-model="name" on-enter="greet(name)"> {{greeting}}
+  
+  
+  
+<!--    //classes-->
+<!--    <div class="my-info=""allen"></div>-->
+<!--    //elements-->
+<!--    <my-info></my-info>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

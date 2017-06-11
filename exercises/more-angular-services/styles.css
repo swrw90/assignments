@@ -1,0 +1,20 @@
+.inputs {
+    display: flex;
+    justify-content:center;
+    margin: auto;
+    float: none;
+}
+.header {
+    background-color: darkcyan; 
+    justify-content:center;
+    margin: auto;
+    float: none;
+}
+.search-bar {
+     display: flex;
+    justify-content:center;
+    margin: auto;
+    float: none;
+    padding: 1%;
+    
+}

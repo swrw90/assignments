@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="Portfolio">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Seth Watson Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/css/styles.css">
+</head>
+
+<body>
+
+    <!--    <navbar></navbar>-->
+
+    <nav id="home-section">
+        <ul class="navigation nav">
+            <li data-slide="1"><a href="#slide1">Home</a></li>
+            <li data-slide="2" class="about"><a href="#slide2">About</a></li>
+            <li data-slide="3"><a href="#slide3">Projects</a></li>
+            <li data-slide="4"><a href="#slide4">Contact</a></li>
+           
+            
+        </ul>
+    </nav>
+   
+    <!--
+    <div class="container">
+        <ng-view></ng-view>
+    </div>
+-->
+
+    <!--    <div class="main">-->
+
+    <!--       SLIDE1 HOME-->
+    <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 slide-1-logo">
+                    <img src="images/some-logo.jpg" class="logo-img">
+                    <div id="banner" class="col-md-6">
+                        <h1 class="banner">Seth Watson</h1>
+                        <h2 class="inner-banner">Web Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="down">
+            <a href="#slide2" class="btn" data-slide="2"></a>
+        </div>
+    </div>
+
+    <!--       SLIDE2 ABOUT ME-->
+    <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
+        <div id="banner" class="col-md-6">
+            <h1 class="about-banner" id="about-section">About Me</h1>
+        </div>
+        <div class="col-md-6 slide-1-logo">
+            <img src="images/some-logo.jpg" class="portrait-img">
+            <div class="resume-position">
+                <a class="resume" href="images/slide2/Seth%20Watson%20R%C3%A9sum%C3%A9.pdf" download>Résumé</a></div>
+        </div>
+        <div class="col-md-6 about-content">
+            <h2 class="about-inner">Go Fuck Yourself</h2>
+            <p class="about-text">I'm a shitty douche magoo and you should'nt hire me because I'll just get stoned and eat all of your snacks. I rarely bathe and you'll notice right away. Did I mention go fuck yourself? Yep, well fuck right off then. Thaaaaanks!</p>
+        </div>
+        <div class="down">
+            <a href="#slide3" class="btn" data-slide="3"></a>
+        </div>
+    </div>
+
+    <!--       SLIDE3 PROJECTS-->
+    <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
+        <div id="banner" class="col-md-6">
+            <h1 class="project-banner">Projects</h1>
+            <h2 class="project-inner">Go Fuck Yourself</h2>
+        </div>
+        <div class="down">
+            <a href="#slide4" class="btn" data-slide="4"></a>
+        </div>
+    </div>
+
+    <!--       SLIDE4 CONTACT-->
+    <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+        <div id="banner" class="col-md-6">
+            <h1 class="contact-banner">Contact</h1>
+            <h2 class="contact-inner">Go Fuck Yourself</h2>
+        </div>
+        <div class="slide">
+            <a href="#slide1" class="btn" data-slide="1"></a>
+        </div>
+    </div>
+
+    <!--    Libraries-->
+    <!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/waypoints.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
+-->
+    <!--    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+
+
+    <!--Main App-->
+        <script src="app.js"></script>
+    
+    <!--Components-->
+    <!--    <script src="js/page-controls.js"></script>-->
+    <!--    <script src="components/navbar/navbar.js"></script>-->
+    <!--    <script src="components/directives/parallaxDirective.js"></script>-->
+
+</body>
+
+</html>

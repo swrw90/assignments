@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="moreServices">
+
+<head>
+    <meta charset="UTF-8" ng-app="moreServices">
+    <title>More Services</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div ng-controller="MainCtrl">
+        <div class="container col-sm-6 header">
+            <div class="row inputs">
+                <div class="header">
+                    <input ng-model="cartoon.imgUrl" type="text" placeholder="Img URL">
+                    <input ng-model="cartoon.name" type="text" placeholder="Title">
+                    <input ng-model="cartoon.description" type="text" placeholder="Description">
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 search-bar">
+                <button type="submit" value="submit" ng-click="createCartoon(cartoon)">Submit</button>
+            </div>
+        </div>
+        <div ng-repeat="toon in toonies">
+            <img ng-src="{{toon.imgUrl}}">
+            <h2>{{toon.name}}</h2>
+            <p>{{toon.description}}</p>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+
+    <script src="app.js"></script>
+    <script src="cartoonList.js"></script>
+</body>
+
+</html>

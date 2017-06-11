@@ -1,0 +1,7 @@
+<div ng-repeat="item in wishItems">
+   <img class="images" ng-src="{{item.imgUrl}}">
+    <h2>{{item.name}}</h2>
+    <h3>{{item.price | currency : "€ " }}</h3>
+</div>
+
+

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="bountyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Bounty Hunter</title>
+</head>
+<body>
+    <div ng-controller="MainCtrl">
+          <h2> Bounty Hunter </h2>
+        <form>
+            <input type="text" ng-model="item.title" placeholder="Add New">
+            <input ng-model="item.imgUrl" type="text" placeholder="Img URL">
+            <input ng-model="item.description" type="text" placeholder="Description">
+            <button type="submit" ng-click="activateService(item)">Submit</button>
+        </form>
+
+        <div ng-repeat="bounty in bountyList">
+            <input type="checkbox" ng-model="item.completed" ng-click="boxChecked(item)">
+            <p ng-class="{strike: item.completed}">{{item.title}} </p>
+            <img ng-src="{{item.imgUrl}}">
+            <div> {{item.description}} </div>
+            <button ng-click="removeItem(item)">X</button>
+        </div>
+        
+        
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="bounty-service.js"></script>
+</body>
+</html>

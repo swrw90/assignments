@@ -1,0 +1,10 @@
+Seth Watson Portfolio Notes
+===========================
+
+Installs
+========
+
+$ bower install jquery.stellar
+npm i jquery-waypoints
+sass-3.4.24
+koala
