@@ -1,4 +1,5 @@
-angular.module("contactRepsApp");
-angular.service("someService", ["$http", function($http)
+var app =angular.module("contactRepsApp");
+app.service("apiService", ["$http", function ($http){
 
-]);
+
+}]);
