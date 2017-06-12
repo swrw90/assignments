@@ -8,18 +8,25 @@ body {
 .navigation {
   padding: 0;
   margin: 0;
-  background: #333;
+  background: #545a36;
   position: fixed;
   top: 0;
   z-index: 999;
   width: 100%; }
-  .navigation li {
-    display: inline-block;
-    padding: 5px 10px; }
-    .navigation li a {
-      color: black;
-      text-decoration: none;
-      border-radius: 13px; }
+
+.navigation li {
+  display: inline-block;
+  padding: 5px 10px; }
+
+.navigation li a {
+  border-radius: 5px;
+  color: black; }
+
+.navigation li a:hover {
+  color: black; }
+
+.navigation li a:visited {
+  color: black; }
 
 .main {
   margin-top: 30px;
@@ -58,7 +65,7 @@ body {
 .slide-1-logo {
   text-align: center; }
 
-#banner {
+.banner-id {
   width: 100%; }
 
 .banner {
@@ -117,7 +124,8 @@ body {
   text-decoration: none; }
 
 #slide3 {
-  background-color: #b6c10b; }
+  background-color: #b6c10b;
+  background-image: url("https://static.pexels.com/photos/26750/pexels-photo-26750.jpg"); }
 
 .project-banner {
   font-family: Raleway, Helvetica;
@@ -131,13 +139,22 @@ body {
   color: #e1e1e1;
   text-align: center; }
 
+.modal-btn {
+  width: 70%;
+  height: auto; }
+
+.project-img {
+  width: 100%;
+  height: auto; }
+
 #slide4 {
-  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU69GlR4UjkYL4Lvkgw7NYvQlk2uLWu5R3sVmH_seBdtD6-Z3K);
+  background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  z-index: 10; }
+  z-index: 10;
+  width: 100%; }
 
 .contact-banner {
   font-family: Raleway, Helvetica;
@@ -151,51 +168,29 @@ body {
   color: #e1e1e1;
   text-align: center; }
 
-#welcome {
-  background-color: black; }
-
-.fly-in-text {
-  list-style: none;
+.up-btn {
+  display: block;
+  width: 50px;
+  height: 50px;
   position: absolute;
+  bottom: 25px;
   left: 50%;
-  top: 50%;
-  transform: translateX(-50%) translateY(-50%); }
+  margin-left: -25px;
+  background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat; }
 
-.fly-in-text li {
-  display: inline-block;
-  margin-right: 50px;
-  font-family: Raleway, Helvetica, Open Sans, Arial;
-  font-weight: 300;
-  font-size: 4em;
-  color: #fff;
-  opacity: 1;
-  transition: all 5s ease; }
+.contact-links {
+  width: 10%;
+  justify-content: center;
+  text-align: center;
+  margin: auto; }
 
-.fly-in-text li:last-child {
-  margin-right: 0; }
+.git-link {
+  margin: auto; }
 
-.fly-in-text.hidden li {
-  opacity: 0; }
-
-.fly-in-text.hidden li:nth-child(1) {
-  transform: translateX(-200px) translateY(-200px); }
-
-.fly-in-text.hidden li:nth-child(2) {
-  transform: translateX(20px) translateY(100px); }
-
-.fly-in-text.hidden li:nth-child(3) {
-  transform: translateX(-150px) translateY(-80px); }
-
-.fly-in-text.hidden li:nth-child(4) {
-  transform: translateX(10px) translateY(-200px); }
-
-.fly-in-text.hidden li:nth-child(5) {
-  transform: translateX(-300px) translateY(200px); }
-
-.fly-in-text.hidden li:nth-child(6) {
-  transform: translateX(20px) translateY(-20px); }
-
-.fly-in-text.hidden li:nth-child(7) {
-  transform: translateX(30px) translateY(200px); }
+.linked-in-icon {
+  margin: auto;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

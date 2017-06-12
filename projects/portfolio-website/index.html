@@ -12,17 +12,15 @@
 
     <!--    <navbar></navbar>-->
 
-    <nav id="home-section">
+    <nav>
         <ul class="navigation nav">
-            <li data-slide="1"><a href="#slide1">Home</a></li>
-            <li data-slide="2" class="about"><a href="#slide2">About</a></li>
-            <li data-slide="3"><a href="#slide3">Projects</a></li>
-            <li data-slide="4"><a href="#slide4">Contact</a></li>
-           
-            
+            <li data-slide="1"><a class="nav-links" href="#slide1">Home</a></li>
+            <li data-slide="2"><a class="nav-links" href="#slide2">About</a></li>
+            <li data-slide="3"><a class="nav-links" href="#slide3">Projects</a></li>
+            <li data-slide="4"><a class="nav-links" href="#slide4">Contact</a></li>
         </ul>
     </nav>
-   
+
     <!--
     <div class="container">
         <ng-view></ng-view>
@@ -37,7 +35,8 @@
             <div class="row">
                 <div class="col-md-12 slide-1-logo">
                     <img src="images/some-logo.jpg" class="logo-img">
-                    <div id="banner" class="col-md-6">
+                    <!--                    changed id that was dup-->
+                    <div class="banner-id" class="col-md-6">
                         <h1 class="banner">Seth Watson</h1>
                         <h2 class="inner-banner">Web Developer</h2>
                     </div>
@@ -51,17 +50,17 @@
 
     <!--       SLIDE2 ABOUT ME-->
     <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
-        <div id="banner" class="col-md-6">
+        <div class="banner-id" class="col-md-6">
             <h1 class="about-banner" id="about-section">About Me</h1>
         </div>
         <div class="col-md-6 slide-1-logo">
-            <img src="images/some-logo.jpg" class="portrait-img">
+            <img src="images/slide2/V-School-Portrait1.JPG" class="portrait-img">
             <div class="resume-position">
                 <a class="resume" href="images/slide2/Seth%20Watson%20R%C3%A9sum%C3%A9.pdf" download>Résumé</a></div>
         </div>
         <div class="col-md-6 about-content">
-            <h2 class="about-inner">Go Fuck Yourself</h2>
-            <p class="about-text">I'm a shitty douche magoo and you should'nt hire me because I'll just get stoned and eat all of your snacks. I rarely bathe and you'll notice right away. Did I mention go fuck yourself? Yep, well fuck right off then. Thaaaaanks!</p>
+            <h2 class="about-inner">Words</h2>
+            <p class="about-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus earum, rem, numquam, sunt excepturi at vel odio quam assumenda reprehenderit placeat asperiores labore ipsam explicabo dolorem hic. Voluptates, repudiandae, autem.</p>
         </div>
         <div class="down">
             <a href="#slide3" class="btn" data-slide="3"></a>
@@ -70,41 +69,113 @@
 
     <!--       SLIDE3 PROJECTS-->
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-        <div id="banner" class="col-md-6">
+        <div class="banner-id" class="col-md-6">
             <h1 class="project-banner">Projects</h1>
-            <h2 class="project-inner">Go Fuck Yourself</h2>
+            <h2 class="project-inner">Some Project Stuff</h2>
+        </div>
+        <div class="col-md-4 slide-1-logo">
+            <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal"> <img src="images/slide3/blog.png" class="project-img"></button>
+            <h4 class="modal-title">Blog</h4>
+            <div id="myModal" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Blog</h4>
+                        </div>
+                        <div class="modal-body"><img src="images/slide3/blog.png" class="project-img">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 slide-1-logo">
+            <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal2"> <img src="images/slide3/coffee-shop.png" class="project-img"></button>
+            <h4 class="modal-title">Coffee Shop</h4>
+            <div id="myModal2" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Coffee Shop</h4>
+                        </div>
+                        <div class="modal-body2"><img src="images/slide3/coffee-shop.png" class="project-img">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 slide-1-logo">
+            <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal3"> <img src="images/slide3/mario-pest.png" class="project-img"></button>
+            <h4 class="modal-title">Mario Pest Control</h4>
+            <div id="myModal3" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Mario Pest Control</h4>
+                        </div>
+                        <div class="modal-body3"><img src="images/slide3/mario-pest.png" class="project-img">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn-success" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </div>
         <div class="down">
             <a href="#slide4" class="btn" data-slide="4"></a>
         </div>
     </div>
 
+    </div>
     <!--       SLIDE4 CONTACT-->
     <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-        <div id="banner" class="col-md-6">
+        <div id="banner" class="col-md-12">
             <h1 class="contact-banner">Contact</h1>
-            <h2 class="contact-inner">Go Fuck Yourself</h2>
+            <h2 class="contact-inner">Ob-La-Di, Ob-La-Da</h2>
+            <div class="col-md-12">
+                <div id="git-link"><a href="https://github.com/swrw90"><img class="contact-links" src="images/slide4/git-icon.svg"></a>
+                </div>
+                <div id="linked-in-icon">
+                <a class="contact-links" href="https://www.linkedin.com/in/seth-watson-56876a118/"><img class="contact-links" src="images/slide4/linkedin-outline.png"></a>
+                </div>
+            </div>
         </div>
+
         <div class="slide">
-            <a href="#slide1" class="btn" data-slide="1"></a>
+            <a href="#slide1" class="up-btn" data-slide="1"></a>
         </div>
     </div>
 
+
+
     <!--    Libraries-->
     <!--    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!--
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script src="js/waypoints.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular-route.js"></script>
 -->
-    <!--    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 
     <!--Main App-->
-        <script src="app.js"></script>
-    
+    <script src="app.js"></script>
+
     <!--Components-->
     <!--    <script src="js/page-controls.js"></script>-->
     <!--    <script src="components/navbar/navbar.js"></script>-->
