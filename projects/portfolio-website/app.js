@@ -17,13 +17,18 @@
 
 
 //WELCOME SCREEN
-$(function() {
+// $(function() {
                 
-                setTimeout(function() {
-                    $('.fly-in-text').removeClass('hidden');
-                }, 500);
+//                 setTimeout(function() {
+//                     $('.fly-in-text').removeClass('hidden');
+//                 }, 500);
                 
-            });
+//             });
+
+
+
+
+
 
 //enabling smooth scroll
 $(function() {

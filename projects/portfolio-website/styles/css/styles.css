@@ -71,7 +71,8 @@ body {
 .banner {
   font-family: Raleway, Helvetica;
   font-size: 72px;
-  text-align: center; }
+  text-align: center;
+  color: #000000; }
 
 .inner-banner {
   font-family: Raleway, Helvetica;
@@ -79,7 +80,7 @@ body {
   text-align: center; }
 
 #slide2 {
-  background-image: url(https://www.forest2market.com/hubfs/2016_Website/Home_Images/photo-1425913397330-cf8af2ff40a1.jpg?t=1496766463172);
+  background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ec/e6/db/ece6dbc213da89a026e6cbd3b2cd96c4.jpg);
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -89,22 +90,28 @@ body {
 .about-banner {
   font-family: Raleway, Helvetica;
   font-size: 72px;
-  color: #e1e1e1;
+  color: #000000;
   text-align: center; }
 
 .about-inner {
   font-family: Raleway, Helvetica;
   font-size: 32px;
-  color: #e1e1e1;
+  color: #000000;
   text-align: center; }
 
 .about-text {
   width: 25%;
-  margin: auto; }
+  margin: auto;
+  font-size: 32px;
+  color: #000000; }
 
 .portrait-img {
-  margin-top: 15%;
-  width: 50%; }
+  margin: auto;
+  margin-top: 5%;
+  width: 20%; }
+
+.img-circle {
+  border-radius: 15%; }
 
 .resume-position {
   justify-content: center; }
@@ -112,14 +119,14 @@ body {
 .resume {
   font-family: Raleway, Helvetica;
   font-size: 22px;
-  color: #e1e1e1;
+  color: #000000;
   text-align: center;
   text-decoration: none; }
 
 .about-text {
   font-family: Raleway, Helvetica;
-  font-size: 14px;
-  color: #e1e1e1;
+  font-size: 20px;
+  color: #000000;
   text-align: center;
   text-decoration: none; }
 
@@ -130,13 +137,13 @@ body {
 .project-banner {
   font-family: Raleway, Helvetica;
   font-size: 72px;
-  color: #e1e1e1;
+  color: #000000;
   text-align: center; }
 
 .project-inner {
   font-family: Raleway, Helvetica;
   font-size: 32px;
-  color: #e1e1e1;
+  color: #000000;
   text-align: center; }
 
 .modal-btn {
@@ -159,13 +166,13 @@ body {
 .contact-banner {
   font-family: Raleway, Helvetica;
   font-size: 72px;
-  color: #e1e1e1;
+  color: #000000;
   text-align: center; }
 
 .contact-inner {
   font-family: Raleway, Helvetica;
   font-size: 32px;
-  color: #e1e1e1;
+  color: #000000;
   text-align: center; }
 
 .up-btn {
@@ -184,13 +191,19 @@ body {
   width: 10%;
   justify-content: center;
   text-align: center;
-  margin: auto; }
+  margin: auto;
+  z-index: 9999;
+  text-align: center; }
 
 .git-link {
-  margin: auto; }
+  margin: auto;
+  z-index: 9999;
+  text-align: center;
+  justify-content: center; }
 
 .linked-in-icon {
   margin: auto;
-  text-align: center; }
+  text-align: center;
+  z-index: 9999; }
 
 /*# sourceMappingURL=styles.css.map */
