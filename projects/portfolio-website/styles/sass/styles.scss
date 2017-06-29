@@ -5,7 +5,7 @@
                    padding: 0;
                    margin: 0;
                }
-               
+
                .navigation {
                    padding: 0;
                    margin: 0;
@@ -15,36 +15,32 @@
                    z-index: 999;
                    width: 100%;
                }
-               
+
                .navigation li {
                    display: inline-block;
                    padding: 5px 10px;
                }
-               
+
                .navigation li a {
                    border-radius: 5px;
                    color: black;
-               }
-               
-               //                    .nav-links a{
+               } //                    .nav-links a{
                //                       color: white;
                //                   }
                .navigation li a:hover {
                    color: black;
                }
-               
+
                .navigation li a:visited {
                    color: black;
-               }
-               
-               //               .active {
+               } //               .active {
                //                   //            background-color: lighten(#333, 20%);
                //               }
                .main {
                    margin-top: 30px;
                    height: 100%;
                }
-               
+
                .slide {
                    background-attachment: fixed;
                    width: 100%;
@@ -52,12 +48,12 @@
                    position: relative;
                    padding: 30px;
                }
-               
+
                .logo-img {
                    width: 50%;
                    margin-top: 5%;
                }
-               
+
                .btn {
                    display: block;
                    width: 50px;
@@ -70,40 +66,41 @@
                    background-size: 50px 50px;
                    background-repeat: no-repeat;
                }
-               
+
                .slide-down-page {
                    box-sizing: content-box;
                    width: 100%;
-               }
-               
-               //       Home Section 
+               } //       Home Section 
                #slide1 {
                    background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
                }
-               
+
                .slide-1-logo {
                    text-align: center;
                }
-               
-               .banner-id {
+
+               #overlay {
                    width: 100%;
-                   //            margin-top: 75px;
+                   background-color: #333;
+                   opacity: .5;
                }
-               
+
+               .banner-id {
+                   width: 100%; //            margin-top: 75px;
+               }
+
                .banner {
                    font-family: Raleway, Helvetica;
                    font-size: 72px;
                    text-align: center;
                    color: #000000;
                }
-               
+
                .inner-banner {
                    font-family: Raleway, Helvetica;
                    font-size: 32px;
                    text-align: center;
-               }
-               
-               //About Section
+               } //About Section
                #slide2 {
                    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ec/e6/db/ece6dbc213da89a026e6cbd3b2cd96c4.jpg);
                    -webkit-background-size: cover;
@@ -112,94 +109,101 @@
                    background-size: cover;
                    z-index: 9;
                }
-               
+
                .about-banner {
                    font-family: Raleway, Helvetica;
                    font-size: 72px;
-                   color: #000000;;
+                   color: #000000;
+                   ;
                    text-align: center;
                }
-               
-               .about-content {}
-               
+
+            //    .about-content {}
+
+               #transparent-bg {
+                //    opacity: .03;
+                   width: 50%;
+                   border: 1px;
+               }
+
                .about-inner {
                    font-family: Raleway, Helvetica;
                    font-size: 32px;
                    color: #000000;
                    text-align: center;
                }
-               
+
                .about-text {
                    width: 25%;
                    margin: auto;
                    font-size: 32px;
                    color: #000000;
+                   text-align: center;
+                   z-index: 1;
                }
-               
-               .portrait-img {
-                   margin: auto;
-                   margin-top: 5%;
-                   width: 20%;
-                   
 
-               }
-               .img-circle {
-                   border-radius: 15%;
+            //    .portrait-img {
+            //        margin: auto;
+            //        margin-top: 5%;
+            //        width: 20%;
+            //    }
 
-               }
-               
+            //    .img-circle {
+            //        border-radius: 15%;
+            //    }
+
                .resume-position {
                    justify-content: center;
                }
-               
+
                .resume {
                    font-family: Raleway, Helvetica;
-                   font-size: 22px;
+                   font-size: 32px;
                    color: #000000;
                    text-align: center;
                    text-decoration: none;
                }
-               
+
+               .resume-button {
+                   border-radius: 5px;
+               }
+
                .about-text {
                    font-family: Raleway, Helvetica;
                    font-size: 20px;
                    color: #000000;
                    text-align: center;
                    text-decoration: none;
-               }
-               
-               //Projects Section
+                   justify-content: center;
+               } //Projects Section
                #slide3 {
                    background-color: #b6c10b;
                    background-image: url("https://static.pexels.com/photos/26750/pexels-photo-26750.jpg")
                }
-               
+
                .project-banner {
                    font-family: Raleway, Helvetica;
                    font-size: 72px;
                    color: #000000;
                    text-align: center;
                }
-               
+
                .project-inner {
                    font-family: Raleway, Helvetica;
                    font-size: 32px;
                    color: #000000;
                    text-align: center;
                }
-               
+
                .modal-btn {
                    width: 70%;
                    height: auto;
                }
-               
+
                .project-img {
                    width: 100%;
                    height: auto;
-
-               }
-               
-               //Contact Section
+               } //Contact Section
                #slide4 {
                    background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
                    -webkit-background-size: cover;
@@ -209,21 +213,21 @@
                    z-index: 10;
                    width: 100%;
                }
-               
+
                .contact-banner {
                    font-family: Raleway, Helvetica;
                    font-size: 72px;
                    color: #000000;
                    text-align: center;
                }
-               
+
                .contact-inner {
                    font-family: Raleway, Helvetica;
                    font-size: 32px;
                    color: #000000;
                    text-align: center;
                }
-               
+
                .up-btn {
                    display: block;
                    width: 50px;
@@ -236,7 +240,7 @@
                    background-size: 50px 50px;
                    background-repeat: no-repeat;
                }
-               
+
                .contact-links {
                    width: 10%;
                    justify-content: center;
@@ -245,22 +249,19 @@
                    z-index: 9999;
                    text-align: center;
                }
-               
+
                .git-link {
                    margin: auto;
                    z-index: 9999;
                    text-align: center;
                    justify-content: center;
-                   
                }
-               
+
                .linked-in-icon {
                    margin: auto;
                    text-align: center;
                    z-index: 9999;
-               }
-               
-               //
+               } //
                //               //WELCOME PAGE
                //               #welcome {
                //                   background-color: black;

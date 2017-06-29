@@ -65,6 +65,11 @@ body {
 .slide-1-logo {
   text-align: center; }
 
+#overlay {
+  width: 100%;
+  background-color: #333;
+  opacity: .5; }
+
 .banner-id {
   width: 100%; }
 
@@ -93,6 +98,10 @@ body {
   color: #000000;
   text-align: center; }
 
+#transparent-bg {
+  width: 50%;
+  border: 1px; }
+
 .about-inner {
   font-family: Raleway, Helvetica;
   font-size: 32px;
@@ -103,32 +112,30 @@ body {
   width: 25%;
   margin: auto;
   font-size: 32px;
-  color: #000000; }
-
-.portrait-img {
-  margin: auto;
-  margin-top: 5%;
-  width: 20%; }
-
-.img-circle {
-  border-radius: 15%; }
+  color: #000000;
+  text-align: center;
+  z-index: 1; }
 
 .resume-position {
   justify-content: center; }
 
 .resume {
   font-family: Raleway, Helvetica;
-  font-size: 22px;
+  font-size: 32px;
   color: #000000;
   text-align: center;
   text-decoration: none; }
+
+.resume-button {
+  border-radius: 5px; }
 
 .about-text {
   font-family: Raleway, Helvetica;
   font-size: 20px;
   color: #000000;
   text-align: center;
-  text-decoration: none; }
+  text-decoration: none;
+  justify-content: center; }
 
 #slide3 {
   background-color: #b6c10b;
