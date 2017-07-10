@@ -6,6 +6,13 @@ class TodoItem extends React.Component {
             <div>
                 <button onClick={() => { this.props.handleRemove(this.props.index) }}>X</button>
                 <p>{this.props.text}</p>
+                <input onChange={(event) => {
+                    this.props.handleUpdate(this.props.index, event)
+                }}
+                    value={this.props.nameValue} />
+                <button onClick={() => {
+                this.props.handleSave(this.props.index); 
+                }}>Save</button>
             </div>
         )
     }

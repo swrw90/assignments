@@ -6,7 +6,19 @@ class TodoContainer extends React.Component {
     constructor() {
         super();
         this.state = {
-            todos: ["nap time", "cuddle puddle", "poop"],
+            todos: [
+                {
+                    name: "nap time",
+                    value: ""
+                },
+                {
+                    name: "cuddle puddle",
+                    value: ""
+                },
+                {
+                    name: "poop",
+                    value: ""
+                }],
             todoValue: ""
         }
         autoBind(this);
@@ -14,10 +26,28 @@ class TodoContainer extends React.Component {
     click() {
         this.setState({
             ...this.state,
-            todos: [...this.state.todos, this.state.todoValue],
+            todos: [...this.state.todos, { name: this.state.todoValue, value: "" }],
             todoValue: ""
         });
     }
+    updateItemValue(index, event) {
+        let todos = [...this.state.todos];
+        todos[index].value = event.target.value;
+        this.setState({
+            ...this.state,
+            todos: todos
+        });
+    }
+
+    save(index) {
+        let todos = [...this.state.todos];
+        todos[index].name = todos[index].value;
+        this.setState({
+            ...this.state,
+            todos: todos
+        });
+    }
+
     updateValue(event) {
         this.setState({
             ...this.state,
@@ -46,7 +76,7 @@ class TodoContainer extends React.Component {
                 <button onClick={() => {
                     this.click();
                 }} >Add Todo</button>
-                <TodoList todos={this.state.todos} handleRemove={this.remove} />
+                <TodoList handleSave={this.save} handleUpdate={this.updateItemValue} todos={this.state.todos} handleRemove={this.remove} />
             </div>
         )
     }
