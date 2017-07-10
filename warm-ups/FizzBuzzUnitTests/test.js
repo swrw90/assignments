@@ -1,6 +1,6 @@
 let chai = require("chai");
 let assert = chai.assert;
-let fizzBuzz = require("../test.js");
+let fizzBuzz = require("./app.js");
 
 describe("FizzBuzz Test", () => {
     it("Should return an array where items divisible by 3 are Fizz, 5 are Buzz, both are FizzBuzz and none are nan", () => {

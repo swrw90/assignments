@@ -71,7 +71,15 @@ body {
   opacity: .5; }
 
 .banner-id {
-  width: 100%; }
+  width: 100%;
+  margin-top: 75px; }
+
+.homeBanner {
+  font-family: Raleway, Helvetica;
+  font-size: 72px;
+  text-align: center;
+  color: #000000;
+  margin-top: 20%; }
 
 .banner {
   font-family: Raleway, Helvetica;
@@ -99,8 +107,19 @@ body {
   text-align: center; }
 
 #transparent-bg {
+  height: 400px;
   width: 50%;
-  border: 1px; }
+  border: 10px solid;
+  border-color: rgba(69, 80, 64, 0.84);
+  background-color: rgba(196, 203, 196, 0.51);
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+#icons {
+  text-align: center;
+  margin-top: 5%;
+  padding: 20px; }
 
 .about-inner {
   font-family: Raleway, Helvetica;
@@ -109,25 +128,99 @@ body {
   text-align: center; }
 
 .about-text {
-  width: 25%;
+  width: 80%;
   margin: auto;
+  margin-top: 50px;
   font-size: 32px;
   color: #000000;
   text-align: center;
   z-index: 1; }
 
-.resume-position {
-  justify-content: center; }
-
-.resume {
-  font-family: Raleway, Helvetica;
-  font-size: 32px;
-  color: #000000;
-  text-align: center;
-  text-decoration: none; }
-
 .resume-button {
-  border-radius: 5px; }
+  border-radius: 2px;
+  color: #333;
+  font-size: 15px; }
+
+#resume-page {
+  height: auto;
+  width: 100%;
+  justify-content: center;
+  margin: auto; }
+
+#resume-img {
+  width: 100%;
+  height: auto;
+  border: 2px solid #333;
+  z-index: -1;
+  position: relative; }
+
+#return {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  opacity: 1;
+  left: 5%;
+  top: 10%; }
+
+#about {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  opacity: 1;
+  left: 5%;
+  top: 20%; }
+
+#projects {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  opacity: 1;
+  left: 5%;
+  top: 30%; }
+
+#contact {
+  margin: auto;
+  width: 200px;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  opacity: 1;
+  left: 5%;
+  top: 40%; }
+
+#resBtnPos {
+  margin: auto;
+  z-index: 2;
+  text-align: center;
+  width: 200px;
+  position: absolute;
+  opacity: 1;
+  left: 5%;
+  top: 50%; }
+
+.button {
+  background-color: rgba(92, 121, 59, 0.88);
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 20px;
+  color: black;
+  position: relative; }
+
+.button span {
+  padding: 10.5px;
+  /* width: 500px; */
+  margin-right: 3px;
+  border: 0px solid black;
+  border-radius: 8px;
+  position: absolute;
+  top: 0px;
+  left: 0px; }
 
 .about-text {
   font-family: Raleway, Helvetica;
@@ -153,13 +246,39 @@ body {
   color: #000000;
   text-align: center; }
 
+.modal-title {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  text-align: center; }
+
 .modal-btn {
-  width: 70%;
+  width: 85%;
   height: auto; }
+
+.modal-content {
+  margin: 8% auto;
+  width: 900px;
+  height: 800px; }
+
+.modal-backdrop.in {
+  z-index: -1; }
+
+.modal-dialog {
+  width: 100%; }
+
+.btn-success {
+  text-align: center;
+  font-size: 17px;
+  border-radius: 5px; }
 
 .project-img {
   width: 100%;
   height: auto; }
+
+.project-description {
+  font-family: Helvetica;
+  font-size: 20px;
+  text-align: center; }
 
 #slide4 {
   background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
@@ -174,7 +293,8 @@ body {
   font-family: Raleway, Helvetica;
   font-size: 72px;
   color: #000000;
-  text-align: center; }
+  text-align: center;
+  margin: 5%; }
 
 .contact-inner {
   font-family: Raleway, Helvetica;
@@ -191,6 +311,31 @@ body {
   left: 50%;
   margin-left: -25px;
   background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat;
+  padding-right: 20px; }
+
+.scroll-up {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 25px;
+  left: 45%;
+  margin-left: -25px;
+  background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
+  background-size: 50px 50px;
+  background-repeat: no-repeat; }
+
+.scroll-dwn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 25px;
+  left: 55%;
+  margin-left: -25px;
+  background-image: url("http://freevector.co/wp-content/uploads/2009/10/60920-two-down-arrows.png");
   background-size: 50px 50px;
   background-repeat: no-repeat; }
 

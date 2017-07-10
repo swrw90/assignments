@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Seth Watson Portfolio</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
@@ -35,9 +36,9 @@
             <div class="row">
                 <div class="col-md-12 slide-1-logo">
                     <div class="banner-id" class="col-md-6">
-                        <h1 class="banner">Seth Watson</h1>
+                        <h1 class="homeBanner ">Seth Watson</h1>
                         <h2 class="inner-banner">Web Developer</h2>
-                        <img src="images/sample-logo.png" class="logo-img">
+                       <!-- <img src="images/sample-logo.png" class="logo-img"> -->
 
                     </div>
                 </div>
@@ -52,18 +53,39 @@
     <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
         <div class="banner-id" class="col-md-6">
             <h1 class="about-banner" id="about-section">About Me</h1>
-                <h2 class="about-inner">
-                    <button class="resume-button">
-                    <a class="resume" href="images/slide2/Seth%20Watson%20R%C3%A9sum%C3%A9.pdf" download>Résumé</a>
-                </button>
 
-            </h2>
-            <div id="transparent-bg">
-                <p class="about-text">My name is Seth Watson, I'm a web developer striving to become the best at my profession.</p>
+            <div class="container-fluid" id="transparent-bg">
+                <p class="about-text">I'm a web developer striving to become the best at my profession. The following icons represent my current
+                    progamming language proficiencies.</p>
+                <h2 class="about-inner">
+
+                    <!--<a href="images/slide2/Seth%20Watson%20R%C3%A9sum%C3%A9.pdf" download class="button turquoise "><span>✓</span>Download Resume</a>                    '-->
+                    <!--<a class="resume" href=>
+                    <button class="resume-button">Download Résumé</button>
+              </a>'-->
+                  <!--  <a href="images/slide1/résumé-image.png" class="button turquoise"><span><i class="fa fa-arrow-circle-down" aria-hidden="false"></i></span>Résumé</a> -->
+                        <a href="résumé.html" class="button">Résumé</a>
+
+
+                </h2>
+
+                <div id="icons">
+                    <img class="contact-links" src="https://www.w3.org/html/logo/downloads/HTML5_1Color_Black.svg">
+                    <img class="contact-links" src="http://www.moderncollege.edu.pk/assets/images/css/logo.png">
+                    <img class="contact-links" src="http://www.seas.upenn.edu/~cis197/images/logo.png">
+                    <img class="contact-links" src="http://punchcard.io/wp-content/uploads/2016/02/icon-angular.svg">
+                    <img class="contact-links" src="https://www.shareicon.net/download/2016/06/19/603784_nodejs.ico">
+                    <img class="contact-links" src="http://assets.stickpng.com/thumbs/584830e8cef1014c0b5e4aa0.png">
+                    <img class="contact-links" src="http://mean.io/wp-content/themes/twentysixteen-child/images/express.png">
+                    <img class="contact-links" src="http://pragmaticcoders.com/wp-content/uploads/2016/07/mongodb-logo-1.png">
+                </div>
             </div>
+
         </div>
         <div class="down">
-            <a href="#slide3" class="btn" data-slide="3"></a>
+            <a href="#slide1" class="up-btn scroll-up" data-slide="1"></a>
+            <a href="#slide3" class="btn scroll-dwn" data-slide="3"></a>
+            
         </div>
     </div>
 
@@ -72,12 +94,12 @@
     <div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
         <div class="banner-id" class="col-md-6">
             <h1 class="project-banner">Projects</h1>
-            <h2 class="project-inner">Some Project Stuff</h2>
+            <h2 class="project-inner"></h2>
         </div>
         <div class="col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal"> <img src="images/slide3/blog.png" class="project-img"></button>
-            <h4 class="modal-title">Blog</h4>
-            <div id="myModal" class="modal fade" role="dialog">
+            <h2 class="modal-title">Blog</h2>
+            <div id="myModal" class="modal ß" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -85,6 +107,7 @@
                             <h4 class="modal-title">Blog</h4>
                         </div>
                         <div class="modal-body"><img src="images/slide3/blog.png" class="project-img">
+                        <p class="project-description">This is a mock website for a blog.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
@@ -97,7 +120,7 @@
 
         <div class="col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal2"> <img src="images/slide3/coffee-shop.png" class="project-img"></button>
-            <h4 class="modal-title">Coffee Shop</h4>
+            <h2 class="modal-title">Coffee Shop</h2>
             <div id="myModal2" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -106,6 +129,7 @@
                             <h4 class="modal-title">Coffee Shop</h4>
                         </div>
                         <div class="modal-body2"><img src="images/slide3/coffee-shop.png" class="project-img">
+                        <p class="project-description">This is a mock website for a coffee shop.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
@@ -117,7 +141,7 @@
         </div>
         <div class="col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal3"> <img src="images/slide3/mario-pest.png" class="project-img"></button>
-            <h4 class="modal-title">Mario Pest Control</h4>
+            <h2 class="modal-title">Mario Pest Control</h2>
             <div id="myModal3" class="modal fade" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -126,6 +150,7 @@
                             <h4 class="modal-title">Mario Pest Control</h4>
                         </div>
                         <div class="modal-body3"><img src="images/slide3/mario-pest.png" class="project-img">
+                        <p class="project-description">In this web app everytime the user clicks on a "baddie" it adds to a grand total of earnings for Mario.</p>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
@@ -136,16 +161,88 @@
             </div>
         </div>
         <div class="down">
-            <a href="#slide4" class="btn" data-slide="4"></a>
+            <a href="#slide2" class="up-btn scroll-up" data-slide="1"></a>
+            <a href="#slide4" class="btn scroll-dwn" data-slide="4"></a>
+        </div>
+
+ <div class="col-md-4 slide-1-logo">
+        <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal4"> <img src="images/slide3/reps-app.png" class="project-img"></button>
+        <h2 class="modal-title">Contact Representatives App</h2>
+        <div id="myModal4" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Contact Representatives App</h4>
+                    </div>
+                    <div class="modal-body4"><img src="images/slide3/reps-app.png" class="project-img">
+                    <p class="project-description"> This website allows the user to find current bills within congress and save them to a list.</p> 
+                    <p class="project-description">    It also allows the user to search for their Representatives contact information.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 
+
+ <div class="col-md-4 slide-1-logo">
+        <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal5"> <img src="images/slide3/farmers-market.png" class="project-img"></button>
+        <h2 class="modal-title">Farmers Market</h2>
+        <div id="myModal5" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Farmers Market</h4>
+                    </div>
+                    <div class="modal-body5"><img src="images/slide3/farmers-market.png" class="project-img">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="project-description">This website was a collaborative effort that allows a user to find a farmers market near them and view the products available from vendors at that market.</p>
+                        <button type="button" class="btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+<div class="col-md-4 slide-1-logo">
+        <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal6"> <img src="images/slide3/farmers-market.png" class="project-img"></button>
+        <h2 class="modal-title">Farmers Market</h2>
+        <div id="myModal6" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Farmers Market</h4>
+                    </div>
+                    <div class="modal-body5"><img src="images/slide3/farmers-market.png" class="project-img">
+                    </div>
+                    <div class="modal-footer">
+                        <p class="project-description">This website was a collaborative effort that allows a user to find a farmers market near them and view the products available from vendors at that market.</p>
+                        <button type="button" class="btn-success" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+   
 
     <!--       SLIDE4 CONTACT-->
     <div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
         <div id="banner" class="col-md-12">
             <h1 class="contact-banner">Contact</h1>
-            <h2 class="contact-inner">Ob-La-Di, Ob-La-Da</h2>
+            <h2 class="contact-inner">seth.watson1@gmail.com</h2>
             <center class="col-md-12">
                 <a href="https://github.com/swrw90" class="contact-links">
                     <img class="contact-links" src="images/slide4/git-icon.svg"/>
@@ -155,7 +252,7 @@
         </div>
 
         <div class="">
-            <a href="#slide1" class="up-btn" data-slide="1"></a>
+            <a href="#slide3" class="up-btn" data-slide="1"></a>
         </div>
     </div>
 

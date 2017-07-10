@@ -1,0 +1,1 @@
+Reduce: takes all of the values of an array and reduces them down to a single value.
