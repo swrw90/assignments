@@ -18,7 +18,7 @@ h1 {
 .navigation {
     padding: 0;
     margin: 0;
-    background: #545a36;
+    background: #060605;
     position: fixed;
     top: 0;
     z-index: 999;
@@ -33,16 +33,17 @@ h1 {
 
 .navigation li a {
     border-radius: 5px;
-    color: black;
+    color: rgb(129, 134, 107);
 }
 
-.navigation li a:hover {
+
+/*.navigation li a:hover {
     color: black;
 }
 
 .navigation li a:visited {
     color: black;
-}
+}*/
 
 .main {
     margin-top: 30px;
@@ -60,19 +61,6 @@ h1 {
 .logo-img {
     width: 50%;
     margin-top: 5%;
-}
-
-.btn {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    margin-left: -25px;
-    background-image: url("http://freevector.co/wp-content/uploads/2009/10/60920-two-down-arrows.png");
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
 }
 
 .slide-down-page {
@@ -191,6 +179,10 @@ h1 {
     font-size: 15px;
     position: relative;
     font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+}
+
+a.button:hover {
+    color: #fff;
 }
 
 #resume-page {
@@ -363,7 +355,6 @@ h1 {
     text-align: center;
 }
 
-
 #slide4 {
     background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
     -webkit-background-size: cover;
@@ -389,31 +380,16 @@ h1 {
     text-align: center;
 }
 
-.up-btn {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 25px;
-    left: 50%;
-    margin-left: -25px;
-    background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-    padding-right: 20px;
-}
-
 .scroll-up {
     display: block;
     width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 25px;
-    left: 45%;
+    bottom: 7%;
+    left: 42%;
     margin-left: -25px;
-    background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
-    background-size: 50px 50px;
     background-repeat: no-repeat;
+    color: rgb(129, 134, 107);
 }
 
 .scroll-dwn {
@@ -421,12 +397,28 @@ h1 {
     width: 50px;
     height: 50px;
     position: absolute;
-    bottom: 25px;
+    bottom: 7%;
     left: 55%;
     margin-left: -25px;
-    background-image: url("http://freevector.co/wp-content/uploads/2009/10/60920-two-down-arrows.png");
+    color: rgb(129, 134, 107);
     background-size: 50px 50px;
     background-repeat: no-repeat;
+}
+
+.dwn {
+    margin: auto;
+    left: 47%;
+    bottom: 7%;
+}
+
+.up {
+    margin: auto;
+    left: 47%;
+    bottom: 7%;
+}
+
+.fa-5x {
+    font-size: 9em;
 }
 
 .contact-links {
@@ -452,10 +444,6 @@ h1 {
     z-index: 9999;
 }
 
-.fa-envelope {
-  margin: auto;
-  width: 50px;
-}
 
 /*Tablet Styles*/
 
