@@ -5,15 +5,14 @@
     <meta charset="UTF-8">
     <title>Seth Watson Portfolio</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> {#
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">#}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/css/styles.css">
 </head>
 
 <body>
-
-    <!--    <navbar></navbar>-->
-
     <nav>
         <ul class="navigation nav">
             <li data-slide="1"><a class="nav-links" href="#slide1">Home</a></li>
@@ -23,31 +22,20 @@
         </ul>
     </nav>
 
-    <!--
-    <div class="container">
-        <ng-view></ng-view>
-    </div>
--->
-
-    <!--    <div class="main">-->
-
     <!--       SLIDE1 HOME-->
     <div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="1">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 slide-1-logo">
                     <div class="banner-id" class="col-md-6">
-                        <h1 class="homeBanner ">Seth Watson</h1>
+                        <h1 class="homeBanner">Seth Watson</h1>
                         <h2 class="inner-banner">Web Developer</h2>
-                        <!-- <img src="images/sample-logo.png" class="logo-img"> -->
-
                     </div>
                 </div>
             </div>
         </div>
         <div class="down">
             <a href="#slide2" class="btn scroll-dwn dwn" data-slide="3"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></a>
-            <a href="#slide2" class="btn" data-slide="2"></a>
         </div>
     </div>
 
@@ -55,20 +43,11 @@
     <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
         <div class="banner-id" class="col-md-6">
             <h1 class="about-banner" id="about-section">About Me</h1>
-
             <div class="container-fluid" id="transparent-bg">
                 <p class="about-text">I'm a web developer striving to become the best at my profession. The following icons represent my current
                     progamming language proficiencies.</p>
                 <h2 class="about-inner">
-
-                    <!--<a href="images/slide2/Seth%20Watson%20R%C3%A9sum%C3%A9.pdf" download class="button turquoise "><span>✓</span>Download Resume</a>                    '-->
-                    <!--<a class="resume" href=>
-                    <button class="resume-button">Download Résumé</button>
-              </a>'-->
-                    <!--  <a href="images/slide1/résumé-image.png" class="button turquoise"><span><i class="fa fa-arrow-circle-down" aria-hidden="false"></i></span>Résumé</a> -->
                     <a href="résumé.html" target="_blank" class="button">Résumé</a>
-
-
                 </h2>
 
                 <div id="icons">
@@ -82,13 +61,11 @@
                     <img class="icon-img" src="http://pragmaticcoders.com/wp-content/uploads/2016/07/mongodb-logo-1.png">
                 </div>
             </div>
-
         </div>
+
         <div class="down">
             <a href="#slide1" class="btn scroll-up" data-slide="1"><i class="fa fa-angle-double-up fa-5x" aria-hidden="true"></i></a>
-
             <a href="#slide3" class="btn scroll-dwn" data-slide="3"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></a>
-
         </div>
     </div>
 
@@ -98,7 +75,7 @@
             <h1 class="project-banner">Projects</h1>
             <h2 class="project-inner"></h2>
         </div>
-        <div class="col-md-4 slide-1-logo">
+        <div class="col-xs-6 col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal"> <img src="images/slide3/blog.png" class="project-img"></button>
             <h2 class="modal-title ">Blog</h2>
             <div id="myModal" class="modal ß" role="dialog">
@@ -115,12 +92,11 @@
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
-        <div class="col-md-4 slide-1-logo">
+        <div class="col-xs-6 col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal2"> <img src="images/slide3/coffee-shop.png" class="project-img"></button>
             <h2 class="modal-title">Coffee Shop</h2>
             <div id="myModal2" class="modal fade" role="dialog">
@@ -137,11 +113,11 @@
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
-        <div class="col-md-4 slide-1-logo">
+
+        <div class="col-xs-6 col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal3"> <img src="images/slide3/mario-pest.png" class="project-img"></button>
             <h2 class="modal-title">Mario Pest Control</h2>
             <div id="myModal3" class="modal fade" role="dialog">
@@ -159,19 +135,16 @@
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
+
         <div class="down">
-
             <a href="#slide2" class="btn scroll-up" data-slide="1"><i class="fa fa-angle-double-up fa-5x" aria-hidden="true"></i></a>
-
             <a href="#slide4" class="btn scroll-dwn" data-slide="3"><i class="fa fa-angle-double-down fa-5x" aria-hidden="true"></i></a>
-
         </div>
 
-        <div class="col-md-4 slide-1-logo">
+        <div class="col-xs-6 col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal4"> <img src="images/slide3/reps-app.png" class="project-img"></button>
             <h2 class="modal-title">Contact Representatives App</h2>
             <div id="myModal4" class="modal fade" role="dialog">
@@ -189,13 +162,11 @@
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
-
-        <div class="col-md-4 slide-1-logo">
+        <div class="col-xs-6 col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal5"> <img src="images/slide3/farmers-market.png" class="project-img"></button>
             <h2 class="modal-title">Farmers Market</h2>
             <div id="myModal5" class="modal fade" role="dialog">
@@ -213,13 +184,11 @@
                             <button type="button" class="btn-success" data-dismiss="modal">Close</button>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
 
-
-        <div class="col-md-4 slide-1-logo">
+        <div class="col-xs-6 col-md-4 slide-1-logo">
             <button type="button" class="modal-btn" data-toggle="modal" data-target="#myModal6"> <img src="images/slide3/farmers-market.png" class="project-img"></button>
             <h2 class="modal-title">Farmers Market</h2>
             <div id="myModal6" class="modal fade" role="dialog">
@@ -241,7 +210,9 @@
                 </div>
             </div>
         </div>
-
+        <div class="col-xs-12">
+            
+        </div>
     </div>
 
 
@@ -255,18 +226,12 @@
                     <img class="contact-links" src="images/slide4/git-icon.svg"/>
                     </a>
                 <a class="contact-links" href="https://www.linkedin.com/in/seth-watson-56876a118/"><img class="contact-links" src="images/slide4/linkedin-outline.png"></a>
-
                 <a class="contact-links" href="https://www.linkedin.com/in/seth-watson-56876a118/"><img class="contact-links" src="images/slide4/envelope.png"></a>
-
-
-
             </center>
         </div>
 
         <div class="">
-
             <a href="#slide3" class="btn scroll-up up" data-slide="1"><i class="fa fa-angle-double-up fa-5x" aria-hidden="true"></i></a>
-
         </div>
     </div>
 

@@ -1,43 +1,42 @@
-@font-face {
-    font-family: "Quarz";
-    src: url("../../fonts/quarz974/quarz974light.otf") format("opentype");
-}
+    @font-face {
+        font-family: "Quarz";
+        src: url("../../fonts/quarz974/quarz974light.otf") format("opentype");
+    }
 
-html,
-body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
 
-h1 {
-    font-weight: 700;
-}
+    h1 {
+        font-weight: 700;
+    }
 
-.navigation {
-    padding: 0;
-    margin: 0;
-    background: #060605;
-    position: fixed;
-    top: 0;
-    z-index: 999;
-    width: 100%;
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-}
+    .navigation {
+        text-align: center;
+        padding: 30px;
+        margin: 0;
+        background: #060605;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        width: 100%;
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+    }
 
-.navigation li {
-    display: inline-block;
-    padding: 5px 10px;
-}
+    .navigation li {
+        display: inline-block;
+    }
 
-.navigation li a {
-    border-radius: 5px;
-    color: rgb(129, 134, 107);
-}
-
-
-/*.navigation li a:hover {
+    .navigation li a {
+        border-radius: 5px;
+        color: rgb(129, 134, 107);
+        padding: 10px;
+    }
+    /*.navigation li a:hover {
     color: black;
 }
 
@@ -45,416 +44,431 @@ h1 {
     color: black;
 }*/
 
-.main {
-    margin-top: 30px;
-    height: 100%;
-}
-
-.slide {
-    background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    padding: 30px;
-}
-
-.logo-img {
-    width: 50%;
-    margin-top: 5%;
-}
-
-.slide-down-page {
-    box-sizing: content-box;
-    width: 100%;
-}
-
-#slide1 {
-    background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
-    background-size: cover;
-}
-
-.slide-1-logo {
-    text-align: center;
-}
-
-#overlay {
-    width: 100%;
-    background-color: #333;
-    opacity: .5;
-}
-
-.banner-id {
-    width: 100%;
-    margin-top: 75px;
-}
-
-.homeBanner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    letter-spacing: 5px;
-    font-size: 72px;
-    text-align: center;
-    color: #000000;
-    margin-top: 20%;
-}
-
-.banner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    letter-spacing: 5px;
-    font-size: 72px;
-    text-align: center;
-    color: #000000;
-}
-
-.inner-banner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    letter-spacing: 5px;
-    font-size: 42px;
-    text-align: center;
-}
-
-#slide2 {
-    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ec/e6/db/ece6dbc213da89a026e6cbd3b2cd96c4.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-.about-banner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    font-size: 72px;
-    color: #000000;
-    text-align: center;
-}
-
-#transparent-bg {
-    height: 1100px;
-    width: 80%;
-    border: 10px solid;
-    border-color: rgba(69, 80, 64, 0.84);
-    background-color: rgba(196, 203, 196, 0.51);
-    margin: auto;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#icons {
-    text-align: center;
-    margin-top: 5%;
-    padding: 20px;
-}
-
-.icon-img {
-    width: 10%;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    z-index: 9999;
-    text-align: center;
-    position: relative;
-}
-
-.about-inner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    color: #000000;
-    text-align: center;
-}
-
-.about-text {
-    width: 80%;
-    margin: auto;
-    margin-top: 50px;
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    color: #000000;
-    text-align: center;
-    z-index: 1;
-    position: relative;
-}
-
-.resume-button {
-    border-radius: 2px;
-    color: #333;
-    font-size: 15px;
-    position: relative;
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-}
-
-a.button:hover {
-    color: #fff;
-}
-
-#resume-page {
-    height: auto;
-    width: 100%;
-    justify-content: center;
-    margin: auto;
-}
-
-#resume-img {
-    width: 100%;
-    height: auto;
-    border: 2px solid #333;
-    z-index: -1;
-    position: relative;
-}
-
-#return {
-    margin: auto;
-    width: 200px;
-    text-align: center;
-    z-index: 2;
-    position: absolute;
-    opacity: 1;
-    left: 5%;
-    top: 10%;
-}
-
-#about {
-    margin: auto;
-    width: 200px;
-    text-align: center;
-    z-index: 2;
-    position: absolute;
-    opacity: 1;
-    left: 5%;
-    top: 20%;
-}
-
-#projects {
-    margin: auto;
-    width: 200px;
-    text-align: center;
-    z-index: 2;
-    position: absolute;
-    opacity: 1;
-    left: 5%;
-    top: 30%;
-}
-
-#contact {
-    margin: auto;
-    width: 200px;
-    text-align: center;
-    z-index: 2;
-    position: absolute;
-    opacity: 1;
-    left: 5%;
-    top: 40%;
-}
-
-#resBtnPos {
-    margin: auto;
-    z-index: 2;
-    text-align: center;
-    width: 200px;
-    position: absolute;
-    opacity: 1;
-    left: 5%;
-    top: 50%;
-}
-
-.button {
-    background-color: rgba(92, 121, 59, 0.88);
-    border-radius: 8px;
-    padding: 10px;
-    font-size: 25px;
-    color: black;
-    position: relative;
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-}
-
-.button span {
-    padding: 10.5px;
-    /* width: 500px; */
-    margin-right: 3px;
-    border: 0px solid black;
-    border-radius: 8px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-}
-
-.about-text {
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-    font-size: 30px;
-    color: #000000;
-    text-align: center;
-    text-decoration: none;
-    justify-content: center;
-}
-
-#slide3 {
-    background-color: #b6c10b;
-    background-image: url("https://static.pexels.com/photos/26750/pexels-photo-26750.jpg");
-    background-size: cover;
-}
-
-.project-banner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    font-size: 72px;
-    color: #000000;
-    text-align: center;
-}
-
-.project-inner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    font-size: 32px;
-    color: #000000;
-    text-align: center;
-}
-
-.modal-title {
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-    color: black;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.47);
-    width: 80%;
-    margin: auto;
-    margin-bottom: 5px;
-    margin-top: 5px;
-}
-
-.modal-btn {
-    width: 58%;
-    height: auto;
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-}
-
-.modal-content {
-    margin: 8% auto;
-    width: 900px;
-    height: 800px;
-}
-
-.modal-backdrop.in {
-    z-index: -1;
-}
-
-.modal-dialog {
-    width: 100%;
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-}
-
-.btn-success {
-    text-align: center;
-    font-size: 17px;
-    border-radius: 5px;
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-}
-
-.project-img {
-    width: 100%;
-    height: auto;
-}
-
-.project-description {
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-    font-size: 20px;
-    text-align: center;
-}
-
-#slide4 {
-    background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    z-index: 10;
-    width: 100%;
-}
-
-.contact-banner {
-    font-family: Quarz, Arial, Helvetica, sans-serif;
-    font-size: 72px;
-    color: #000000;
-    text-align: center;
-    margin: 5%;
-}
-
-.contact-inner {
-    font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-    font-size: 32px;
-    color: #000000;
-    text-align: center;
-}
-
-.scroll-up {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 7%;
-    left: 42%;
-    margin-left: -25px;
-    background-repeat: no-repeat;
-    color: rgb(129, 134, 107);
-}
-
-.scroll-dwn {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    bottom: 7%;
-    left: 55%;
-    margin-left: -25px;
-    color: rgb(129, 134, 107);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
-}
-
-.dwn {
-    margin: auto;
-    left: 47%;
-    bottom: 7%;
-}
-
-.up {
-    margin: auto;
-    left: 47%;
-    bottom: 7%;
-}
-
-.fa-5x {
-    font-size: 9em;
-}
-
-.contact-links {
-    width: 10%;
-    justify-content: center;
-    text-align: center;
-    margin: auto;
-    z-index: 9999;
-    text-align: center;
-    margin: 10px;
-}
-
-.git-link {
-    margin: auto;
-    z-index: 9999;
-    text-align: center;
-    justify-content: center;
-}
-
-.linked-in-icon {
-    margin: auto;
-    text-align: center;
-    z-index: 9999;
-}
-
-
-/*Tablet Styles*/
-
-@media (min-width: 768px) {
-    .modal-btn {
-        width: 85%;
+    .main {
+        margin-top: 30px;
+        height: 100%;
     }
+
+    .slide {
+        background-attachment: fixed;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        padding: 30px;
+    }
+
+    .logo-img {
+        width: 50%;
+        margin-top: 5%;
+    }
+
+    .slide-down-page {
+        box-sizing: content-box;
+        width: 100%;
+    }
+
+    #slide1 {
+        background-image: url("/images/slide1/home-forest.jpeg");
+        background-size: cover;
+    }
+
+    .slide-1-logo {
+        text-align: center;
+    }
+
+    #overlay {
+        width: 100%;
+        background-color: #333;
+        opacity: .5;
+    }
+
+    .banner-id {
+        width: 100%;
+        margin-top: 75px;
+    }
+
+    .homeBanner,
+    .about-banner {
+        font-size: 52px;
+    }
+
+    .homeBanner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        letter-spacing: 15px;
+        text-align: center;
+        color: #000000;
+        margin-top: 27%;
+    }
+
+    .banner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+        font-size: 72px;
+        text-align: center;
+        color: #000000;
+    }
+
+    .inner-banner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        letter-spacing: 5px;
+        font-size: 42px;
+        text-align: center;
+    }
+
+    #slide2 {
+        background-image: url("/images/slide2/about-forest.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+
+    .about-banner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        color: #000000;
+        text-align: center;
+    }
+
     #transparent-bg {
+        width: 100%;
+        border: 10px solid;
+        border-color: rgba(69, 80, 64, 0.84);
+        background-color: rgba(196, 203, 196, 0.51);
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #icons {
+        text-align: center;
+        margin-top: 5%;
+        padding: 20px;
+    }
+
+    .icon-img {
+        width: 10%;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        z-index: 9999;
+        text-align: center;
+        position: relative;
+    }
+
+    .about-inner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        /*font-size: 32px;*/
+        color: #000000;
+        text-align: center;
+    }
+
+    .about-text {
+        width: 94%;
+        margin: auto;
+        margin-top: 50px;
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+        font-size: 25px;
+        color: #000000;
+        text-align: center;
+        z-index: 1;
+        position: relative;
+    }
+
+    .resume-button {
+        border-radius: 2px;
+        color: #333;
+        font-size: 15px;
+        position: relative;
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    }
+
+    a.button:hover {
+        color: #fff;
+    }
+
+    #resume-page {
+        height: auto;
+        width: 100%;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #resume-img {
+        width: 100%;
+        height: auto;
+        border: 2px solid #333;
+        z-index: -1;
+        position: relative;
+    }
+
+    #return {
+        margin: auto;
+        width: 200px;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        opacity: 1;
+        left: 5%;
+        top: 10%;
+    }
+
+    #about {
+        margin: auto;
+        width: 200px;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        opacity: 1;
+        left: 5%;
+        top: 20%;
+    }
+
+    #projects {
+        margin: auto;
+        width: 200px;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        opacity: 1;
+        left: 5%;
+        top: 30%;
+    }
+
+    #contact {
+        margin: auto;
+        width: 200px;
+        text-align: center;
+        z-index: 2;
+        position: absolute;
+        opacity: 1;
+        left: 5%;
+        top: 40%;
+    }
+
+    #resBtnPos {
+        margin: auto;
+        z-index: 2;
+        text-align: center;
+        width: 200px;
+        position: absolute;
+        opacity: 1;
+        left: 5%;
+        top: 50%;
+    }
+
+    .button {
+        background-color: rgba(92, 121, 59, 0.88);
+        border-radius: 8px;
+        padding: 10px;
+        font-size: 25px;
+        color: black;
+        position: relative;
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    }
+
+    #slide3 {
+        background-color: #b6c10b;
+        background-image: url("/images/slide3/projects-forest.jpg");
+        background-size: cover;
+    }
+
+    .project-banner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        font-size: 52px;
+        letter-spacing: 11px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .project-inner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        font-size: 32px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .modal-title {
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+        color: black;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.47);
+        width: 95%;
+        margin: auto;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        font-size: 20px;
+    }
+
+    .modal-btn {
+        width: 100%;
+        height: auto;
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    }
+
+    .modal-content {
+        margin: 8% auto;
+        width: 900px;
+        height: 800px;
+    }
+
+    .modal-backdrop.in {
+        z-index: -1;
+    }
+
+    .modal-dialog {
+        width: 100%;
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    }
+
+    .col-xs-12 {
+        clear: both;
+    }
+
+    .btn-success {
+        text-align: center;
+        font-size: 17px;
+        border-radius: 5px;
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+    }
+
+    .project-img {
+        width: 100%;
         height: auto;
     }
-}
 
+    .project-description {
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+        font-size: 20px;
+        text-align: center;
+    }
 
-/*# sourceMappingURL=styles.css.map */
+    #slide4 {
+        background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        z-index: 10;
+        width: 100%;
+    }
+
+    .contact-banner {
+        font-family: Quarz, Arial, Helvetica, sans-serif;
+        font-size: 52px;
+        color: #000000;
+        text-align: center;
+        margin: 5%;
+        margin-top: 100px;
+    }
+
+    .contact-inner {
+        font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+        font-size: 32px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .scroll-up {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 7%;
+        left: 42%;
+        margin-left: -25px;
+        background-repeat: no-repeat;
+        color: rgb(129, 134, 107);
+    }
+
+    .scroll-dwn {
+        display: block;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        bottom: 7%;
+        left: 55%;
+        margin-left: -25px;
+        color: rgb(129, 134, 107);
+        background-size: 50px 50px;
+        background-repeat: no-repeat;
+    }
+
+    .dwn {
+        left: 47%;
+        bottom: 10%;
+    }
+
+    .up {
+        margin: auto;
+        left: 47%;
+        bottom: 7%;
+    }
+
+    .contact-links {
+        width: 10%;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+        z-index: 9999;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .git-link {
+        margin: auto;
+        z-index: 9999;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .linked-in-icon {
+        margin: auto;
+        text-align: center;
+        z-index: 9999;
+    }
+    /*Tablet Styles*/
+
+    @media (min-width: 768px) {
+        .navigation {
+            padding: 0;
+            text-align: left;
+        }
+        .navigation li {
+            padding: 5px 10px;
+        }
+        .homeBanner {
+            font-size: 62px;
+            margin-top: 20%;
+        }
+        .dwn {
+            margin: auto;
+        }
+        .about-banner {
+            font-size: 72px;
+        }
+        #transparent-bg {
+            /*height: 1100px;*/
+            height: auto;
+            width: 80%;
+        }
+        .about-text {
+            width: 80%;
+            font-size: 32px;
+        }
+        .modal-btn {
+            width: 85%;
+        }
+        .modal-title {
+            width: 80%;
+            font-size: 30px;
+        }
+        .project-banner {
+            font-size: 72px;
+        }
+        .contact-banner {
+            font-size: 72px;
+        }
+        i.fa.fa-5x {
+            font-size: 8em;
+        }
+    }
