@@ -349,3 +349,35 @@
 // }
 
 // sheFakin();
+
+
+// 15. Find the longest common prefixes
+// function longestCommonPrefix(strs) {
+//     if(strs == null || strs.length == 0)
+//         return "";
+ 
+//     var minLen=999999999;
+//     for(var i=0;i<strs.length;i++){
+//         var str = strs[i];
+//         if(minLen > str.length)
+//             minLen = str.length;
+//     }
+//     if(minLen == 0) return "";
+ 
+//     for(var j=0; j<minLen; j++){
+//         var prev='0';
+//         for(var i=0; i<strs.length ;i++){
+//             if(i==0) {
+//                 prev = strs[i].charAt(j);
+//                 continue;
+//             }
+ 
+//             if(strs[i].charAt(j) != prev){
+//                 return strs[i].substring(0, j);
+//             }
+//         }
+//     }
+ 
+//     return strs[0].substring(0,minLen);
+// }
+// console.log(longestCommonPrefix(['action', 'actor','active']));
