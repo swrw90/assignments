@@ -1,542 +1,547 @@
-               @font-face {
-                   font-family: "Quarz";
-                   src: url("../../fonts/quarz974/quarz974light.otf") format('opentype');
-               }
-
-               html,
-               body {
-                   height: 100%;
-                   width: 100%;
-                   padding: 0;
-                   margin: 0;
-               }
-
-               .navigation {
-                   padding: 0;
-                   margin: 0;
-                   background: #545a36;
-                   position: fixed;
-                   top: 0;
-                   z-index: 999;
-                   width: 100%;
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-               }
-
-               .navigation li {
-                   display: inline-block;
-                   padding: 5px 10px;
-               }
-
-               .navigation li a {
-                   border-radius: 5px;
-                   color: black;
-               } //                    .nav-links a{
-               //                       color: white;
-               //                   }
-               .navigation li a:hover {
-                   color: black;
-               }
-
-               .navigation li a:visited {
-                   color: black;
-               } //               .active {
-               //                   //            background-color: lighten(#333, 20%);
-               //               }
-               .main {
-                   margin-top: 30px;
-                   height: 100%;
-               }
-
-               .slide {
-                   background-attachment: fixed;
-                   width: 100%;
-                   height: 100%;
-                   position: relative;
-                   padding: 30px;
-               }
-
-               .logo-img {
-                   width: 50%;
-                   margin-top: 5%;
-               }
-
-               .btn {
-                   display: block;
-                   width: 50px;
-                   height: 50px;
-                   position: absolute;
-                   bottom: 25px;
-                   left: 50%;
-                   margin-left: -25px;
-                   background-image: url("http://freevector.co/wp-content/uploads/2009/10/60920-two-down-arrows.png");
-                   background-size: 50px 50px;
-                   background-repeat: no-repeat;
-               }
-
-               .slide-down-page {
-                   box-sizing: content-box;
-                   width: 100%;
-               } //       Home Section 
-               #slide1 {
-                   background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
-                   background-size: cover;
-               }
-
-               .slide-1-logo {
-                   text-align: center;
-               }
-
-               #overlay {
-                   width: 100%;
-                   background-color: #333;
-                   opacity: .5;
-               }
-
-               .banner-id {
-                   width: 100%;
-                   margin-top: 75px;
-               }
-
-               .homeBanner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   letter-spacing: 5px;
-                   font-size: 72px;
-                   text-align: center;
-                   color: #000000;
-                   margin-top: 20%;
-               }
-
-               .banner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   letter-spacing: 5px;
-                   font-size: 72px;
-                   text-align: center;
-                   color: #000000;
-               }
-
-               .inner-banner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   letter-spacing: 5px;
-                   font-size: 42px;
-                   text-align: center;
-               } //About Section
-               #slide2 {
-                   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ec/e6/db/ece6dbc213da89a026e6cbd3b2cd96c4.jpg);
-                   -webkit-background-size: cover;
-                   -moz-background-size: cover;
-                   -o-background-size: cover;
-                   background-size: cover; //    z-index: 9;
-                   //    position: absolute;
-               }
-
-               .about-banner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   font-size: 72px;
-                   color: #000000;
-                   ;
-                   text-align: center;
-               } //    .about-content {}
-               #transparent-bg {
-                   height: 1100px;
-                   width: 80%;
-                   border: 10px solid;
-                   border-color: rgba(69, 80, 64, 0.84);
-                   background-color: rgba(196, 203, 196, 0.51);
-                   margin: auto;
-                   padding-top: 10px;
-                   padding-bottom: 10px;
-               }
-
-               #icons {
-                   text-align: center;
-                   margin-top: 5%;
-                   padding: 20px;
-               }
-
-               .icon-img {
-                   width: 10%;
-                   justify-content: center;
-                   text-align: center;
-                   margin: auto;
-                   z-index: 9999;
-                   text-align: center;
-                   position: relative;
-               }
-
-               .about-inner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   font-size: 32px;
-                   color: #000000;
-                   text-align: center;
-               }
-
-               .about-text {
-                   width: 80%;
-                   margin: auto;
-                   margin-top: 50px;
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   font-size: 32px;
-                   color: #000000;
-                   text-align: center;
-                   z-index: 1;
-                   position: relative;
-               } //    .portrait-img {
-               //        margin: auto;
-               //        margin-top: 5%;
-               //        width: 20%;
-               //    }
-               //    .img-circle {
-               //        border-radius: 15%;
-               //    }
-               //    .resume-position {
-               //        justify-content: center;
-               //    }
-               //    .resume {
-               //        font-family: Raleway, Helvetica;
-               //        font-size: 32px;
-               //        color: #000000;
-               //        text-align: center;
-               //        text-decoration: none;
-               //    }
-               .resume-button {
-                   border-radius: 2px;
-                   color: #333;
-                   font-size: 15px;
-                   position: relative;
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-               }
-
-               #resume-page {
-                   height: auto;
-                   width: 100%;
-                   justify-content: center;
-                   margin: auto;
-               }
-
-               #resume-img {
-                   width: 100%;
-                   height: auto;
-                   border: 2px solid #333;
-                   z-index: -1;
-                   position: relative;
-               }
-
-               #return {
-                   margin: auto;
-                   width: 200px;
-                   text-align: center;
-                   z-index: 2;
-                   position: absolute;
-                   opacity: 1;
-                   left: 5%;
-                   top: 10%;
-               }
-
-               #about {
-                   margin: auto;
-                   width: 200px;
-                   text-align: center;
-                   z-index: 2;
-                   position: absolute;
-                   opacity: 1;
-                   left: 5%;
-                   top: 20%;
-               }
-
-               #projects {
-                   margin: auto;
-                   width: 200px;
-                   text-align: center;
-                   z-index: 2;
-                   position: absolute;
-                   opacity: 1;
-                   left: 5%;
-                   top: 30%;
-               }
-
-               #contact {
-                   margin: auto;
-                   width: 200px;
-                   text-align: center;
-                   z-index: 2;
-                   position: absolute;
-                   opacity: 1;
-                   left: 5%;
-                   top: 40%;
-               }
-
-               #resBtnPos {
-                   margin: auto;
-                   z-index: 2;
-                   text-align: center;
-                   width: 200px;
-                   position: absolute;
-                   opacity: 1;
-                   left: 5%;
-                   top: 50%;
-               }
-
-               .button {
-                   background-color: rgba(92, 121, 59, 0.88);
-                   border-radius: 8px;
-                   padding: 10px;
-                   font-size: 25px;
-                   color: black; //    padding-left: 40px;
-                   position: relative;
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-               }
-
-               .button span {
-                   // background-color: forestgreen;
-                   padding: 10.5px;
-                   /* width: 500px; */
-                   margin-right: 3px;
-                   border: 0px solid black;
-                   border-radius: 8px;
-                   position: absolute;
-                   top: 0px;
-                   left: 0px;
-               }
-
-               .about-text {
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-                   font-size: 30px;
-                   color: #000000;
-                   text-align: center;
-                   text-decoration: none;
-                   justify-content: center;
-               } //Projects Section
-               #slide3 {
-                   background-color: #b6c10b;
-                   background-image: url("https://static.pexels.com/photos/26750/pexels-photo-26750.jpg");
-                   background-size: cover;
-               }
-
-               .project-banner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   font-size: 72px;
-                   color: #000000;
-                   text-align: center;
-               }
-
-               .project-inner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   font-size: 32px;
-                   color: #000000;
-                   text-align: center;
-               }
-
-               .modal-title {
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-                   color: black;
-                   text-align: center;
-               }
-
-               .modal-btn {
-                   width: 58%;
-                   height: auto;
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-               }
-
-               .modal-content {
-                   margin: 8% auto;
-                   width: 900px;
-                   height: 800px;
-               }
-
-               .modal-backdrop.in {
-                   z-index: -1;
-               }
-
-               .modal-dialog {
-                   width: 100%;
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-               }
-
-               .btn-success {
-                   text-align: center;
-                   font-size: 17px;
-                   border-radius: 5px;
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-               } //    #myModal {
-               //        padding: 20px;
-               //    }
-               //    #myModal2 {
-               //        padding: 20px;
-               //    }
-               //    #myModal3 {
-               //        padding: 20px;
-               //    }
-               //    #myModal4 {
-               //        padding: 20px;
-               //    }
-               //    #myModal5 {
-               //        padding: 20px;
-               //    }
-               .project-img {
-                   width: 100%;
-                   height: auto;
-               }
-
-               .project-description {
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-                   font-size: 20px;
-                   text-align: center;
-               } //Contact Section
-               #slide4 {
-                   background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
-                   -webkit-background-size: cover;
-                   -moz-background-size: cover;
-                   -o-background-size: cover;
-                   background-size: cover;
-                   z-index: 10;
-                   width: 100%;
-               }
-
-               .contact-banner {
-                   font-family: Quarz, Arial, Helvetica, sans-serif;
-                   font-size: 72px;
-                   color: #000000;
-                   text-align: center;
-                   margin: 5%;
-               }
-
-               .contact-inner {
-                   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
-                   font-size: 32px;
-                   color: #000000;
-                   text-align: center;
-               }
-
-               .up-btn {
-                   display: block;
-                   width: 50px;
-                   height: 50px;
-                   position: absolute;
-                   bottom: 25px;
-                   left: 50%;
-                   margin-left: -25px;
-                   background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
-                   background-size: 50px 50px;
-                   background-repeat: no-repeat;
-                   padding-right: 20px;
-               }
-
-               .scroll-up {
-                   display: block;
-                   width: 50px;
-                   height: 50px;
-                   position: absolute;
-                   bottom: 25px;
-                   left: 45%;
-                   margin-left: -25px;
-                   background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
-                   background-size: 50px 50px;
-                   background-repeat: no-repeat;
-               }
-
-               .scroll-dwn {
-                   display: block;
-                   width: 50px;
-                   height: 50px;
-                   position: absolute;
-                   bottom: 25px;
-                   left: 55%;
-                   margin-left: -25px;
-                   background-image: url("http://freevector.co/wp-content/uploads/2009/10/60920-two-down-arrows.png");
-                   background-size: 50px 50px;
-                   background-repeat: no-repeat;
-               }
-
-               .contact-links {
-                   width: 10%;
-                   justify-content: center;
-                   text-align: center;
-                   margin: auto;
-                   z-index: 9999;
-                   text-align: center;
-                   margin: 10px;
-               }
-
-               .git-link {
-                   margin: auto;
-                   z-index: 9999;
-                   text-align: center;
-                   justify-content: center;
-               }
-
-               .linked-in-icon {
-                   margin: auto;
-                   text-align: center;
-                   z-index: 9999;
-               }
-               /*Tablet Styles*/
-
-               @media(min-width: 768px) {
-                   .modal-btn {
-                       width: 85%;
+                   @font-face {
+                       font-family: "Quarz";
+                       src: url("../../fonts/quarz974/quarz974light.otf") format('opentype');
                    }
+
+                   html,
+                   body {
+                       height: 100%;
+                       width: 100%;
+                       padding: 0;
+                       margin: 0;
+                   }
+
+                   .navigation {
+                       padding: 0;
+                       margin: 0;
+                       background: #545a36;
+                       position: fixed;
+                       top: 0;
+                       z-index: 999;
+                       width: 100%;
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                   }
+
+                   .navigation li {
+                       display: inline-block;
+                       padding: 5px 10px;
+                   }
+
+                   .navigation li a {
+                       border-radius: 5px;
+                       color: black;
+                   } //                    .nav-links a{
+                   //                       color: white;
+                   //                   }
+                   .navigation li a:hover {
+                       color: black;
+                   }
+
+                   .navigation li a:visited {
+                       color: black;
+                   } //               .active {
+                   //                   //            background-color: lighten(#333, 20%);
+                   //               }
+                   .main {
+                       margin-top: 30px;
+                       height: 100%;
+                   }
+
+                   .slide {
+                       background-attachment: fixed;
+                       width: 100%;
+                       height: 100%;
+                       position: relative;
+                       padding: 30px;
+                   }
+
+                   .logo-img {
+                       width: 50%;
+                       margin-top: 5%;
+                   }
+
+                   .btn {
+                       display: block;
+                       width: 50px;
+                       height: 50px;
+                       position: absolute;
+                       bottom: 25px;
+                       left: 50%;
+                       margin-left: -25px;
+                       background-image: url("http://freevector.co/wp-content/uploads/2009/10/60920-two-down-arrows.png");
+                       background-size: 50px 50px;
+                       background-repeat: no-repeat;
+                   }
+
+                   .slide-down-page {
+                       box-sizing: content-box;
+                       width: 100%;
+                   } //       Home Section 
+                   #slide1 {
+                       background-image: url(https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg);
+                       background-size: cover;
+                   }
+
+                   .slide-1-logo {
+                       text-align: center;
+                   }
+
+                   #overlay {
+                       width: 100%;
+                       background-color: #333;
+                       opacity: .5;
+                   }
+
+                   .banner-id {
+                       width: 100%;
+                       margin-top: 75px;
+                   }
+
+                   .homeBanner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       letter-spacing: 5px;
+                       font-size: 72px;
+                       text-align: center;
+                       color: #000000;
+                       margin-top: 20%;
+                   }
+
+                   .banner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       letter-spacing: 5px;
+                       font-size: 72px;
+                       text-align: center;
+                       color: #000000;
+                   }
+
+                   .inner-banner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       letter-spacing: 5px;
+                       font-size: 42px;
+                       text-align: center;
+                   } //About Section
+                   #slide2 {
+                       background-image: url(https://s-media-cache-ak0.pinimg.com/originals/ec/e6/db/ece6dbc213da89a026e6cbd3b2cd96c4.jpg);
+                       -webkit-background-size: cover;
+                       -moz-background-size: cover;
+                       -o-background-size: cover;
+                       background-size: cover; //    z-index: 9;
+                       //    position: absolute;
+                   }
+
+                   .about-banner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       font-size: 72px;
+                       color: #000000;
+                       ;
+                       text-align: center;
+                   } //    .about-content {}
                    #transparent-bg {
+                       height: 1100px;
+                       width: 80%;
+                       border: 10px solid;
+                       border-color: rgba(69, 80, 64, 0.84);
+                       background-color: rgba(196, 203, 196, 0.51);
+                       margin: auto;
+                       padding-top: 10px;
+                       padding-bottom: 10px;
+                   }
+
+                   #icons {
+                       text-align: center;
+                       margin-top: 5%;
+                       padding: 20px;
+                   }
+
+                   .icon-img {
+                       width: 10%;
+                       justify-content: center;
+                       text-align: center;
+                       margin: auto;
+                       z-index: 9999;
+                       text-align: center;
+                       position: relative;
+                   }
+
+                   .about-inner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       font-size: 32px;
+                       color: #000000;
+                       text-align: center;
+                   }
+
+                   .about-text {
+                       width: 80%;
+                       margin: auto;
+                       margin-top: 50px;
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       font-size: 32px;
+                       color: #000000;
+                       text-align: center;
+                       z-index: 1;
+                       position: relative;
+                   } //    .portrait-img {
+                   //        margin: auto;
+                   //        margin-top: 5%;
+                   //        width: 20%;
+                   //    }
+                   //    .img-circle {
+                   //        border-radius: 15%;
+                   //    }
+                   //    .resume-position {
+                   //        justify-content: center;
+                   //    }
+                   //    .resume {
+                   //        font-family: Raleway, Helvetica;
+                   //        font-size: 32px;
+                   //        color: #000000;
+                   //        text-align: center;
+                   //        text-decoration: none;
+                   //    }
+                   .resume-button {
+                       border-radius: 2px;
+                       color: #333;
+                       font-size: 15px;
+                       position: relative;
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                   }
+
+                   #resume-page {
+                       height: auto;
+                       width: 100%;
+                       justify-content: center;
+                       margin: auto;
+                   }
+
+                   #resume-img {
+                       width: 100%;
+                       height: auto;
+                       border: 2px solid #333;
+                       z-index: -1;
+                       position: relative;
+                   }
+
+                   #return {
+                       margin: auto;
+                       width: 200px;
+                       text-align: center;
+                       z-index: 2;
+                       position: absolute;
+                       opacity: 1;
+                       left: 5%;
+                       top: 10%;
+                   }
+
+                   #about {
+                       margin: auto;
+                       width: 200px;
+                       text-align: center;
+                       z-index: 2;
+                       position: absolute;
+                       opacity: 1;
+                       left: 5%;
+                       top: 20%;
+                   }
+
+                   #projects {
+                       margin: auto;
+                       width: 200px;
+                       text-align: center;
+                       z-index: 2;
+                       position: absolute;
+                       opacity: 1;
+                       left: 5%;
+                       top: 30%;
+                   }
+
+                   #contact {
+                       margin: auto;
+                       width: 200px;
+                       text-align: center;
+                       z-index: 2;
+                       position: absolute;
+                       opacity: 1;
+                       left: 5%;
+                       top: 40%;
+                   }
+
+                   #resBtnPos {
+                       margin: auto;
+                       z-index: 2;
+                       text-align: center;
+                       width: 200px;
+                       position: absolute;
+                       opacity: 1;
+                       left: 5%;
+                       top: 50%;
+                   }
+
+                   .button {
+                       background-color: rgba(92, 121, 59, 0.88);
+                       border-radius: 8px;
+                       padding: 10px;
+                       font-size: 25px;
+                       color: black; //    padding-left: 40px;
+                       position: relative;
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                   }
+
+                   .button span {
+                       // background-color: forestgreen;
+                       padding: 10.5px;
+                       /* width: 500px; */
+                       margin-right: 3px;
+                       border: 0px solid black;
+                       border-radius: 8px;
+                       position: absolute;
+                       top: 0px;
+                       left: 0px;
+                   }
+
+                   .about-text {
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                       font-size: 30px;
+                       color: #000000;
+                       text-align: center;
+                       text-decoration: none;
+                       justify-content: center;
+                   } //Projects Section
+                   #slide3 {
+                       background-color: #b6c10b;
+                       background-image: url("https://static.pexels.com/photos/26750/pexels-photo-26750.jpg");
+                       background-size: cover;
+                   }
+
+                   .project-banner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       font-size: 72px;
+                       color: #000000;
+                       text-align: center;
+                   }
+
+                   .project-inner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       font-size: 32px;
+                       color: #000000;
+                       text-align: center;
+                   }
+
+                   .modal-title {
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                       color: black;
+                       text-align: center;
+                   }
+
+                   .modal-btn {
+                       width: 58%;
+                       height: auto;
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                   }
+
+                   .modal-content {
+                       margin: 23% -.5%;
+                       width: 311px;
+                       height: 365px;
+                   }
+
+                   .modal-backdrop.in {
+                       z-index: -1;
+                   }
+
+                   .modal-dialog {
+                       width: 100%;
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                   }
+
+                   .btn-success {
+                       text-align: center;
+                       font-size: 17px;
+                       border-radius: 5px;
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                   } //    #myModal {
+                   //        padding: 20px;
+                   //    }
+                   //    #myModal2 {
+                   //        padding: 20px;
+                   //    }
+                   //    #myModal3 {
+                   //        padding: 20px;
+                   //    }
+                   //    #myModal4 {
+                   //        padding: 20px;
+                   //    }
+                   //    #myModal5 {
+                   //        padding: 20px;
+                   //    }
+                   .project-img {
+                       width: 100%;
                        height: auto;
                    }
-               } //
-               //               //WELCOME PAGE
-               //               #welcome {
-               //                   background-color: black;
-               //               }
-               //               .fly-in-text {
-               //                   list-style: none;
-               //                   position: absolute;
-               //                   left: 50%;
-               //                   top: 50%;
-               //                   transform: translateX(-50%) translateY(-50%);
-               //               }
-               //               .fly-in-text li {
-               //                   display: inline-block;
-               //                   margin-right: 50px;
-               //                   font-family: Raleway, Helvetica, Open Sans, Arial;
-               //                   font-weight: 300;
-               //                   font-size: 4em;
-               //                   //        color: #fff;
-               //                   opacity: 1;
-               //                   transition: all 5s ease;
-               //               }
-               //               .fly-in-text li:last-child {
-               //                   margin-right: 0;
-               //               }
-               //               .fly-in-text.hidden li {
-               //                   opacity: 0;
-               //               }
-               //               .fly-in-text.hidden li:nth-child(1) {
-               //                   transform: translateX(-200px) translateY(-200px);
-               //               }
-               //               .fly-in-text.hidden li:nth-child(2) {
-               //                   transform: translateX(20px) translateY(100px);
-               //               }
-               //               .fly-in-text.hidden li:nth-child(3) {
-               //                   transform: translateX(-150px) translateY(-80px);
-               //               }
-               //               .fly-in-text.hidden li:nth-child(4) {
-               //                   transform: translateX(10px) translateY(-200px);
-               //               }
-               //               .fly-in-text.hidden li:nth-child(5) {
-               //                   transform: translateX(-300px) translateY(200px);
-               //               }
-               //               .fly-in-text.hidden li:nth-child(6) {
-               //                   transform: translateX(20px) translateY(-20px);
-               //               }
-               //               .fly-in-text.hidden li:nth-child(7) {
-               //                   transform: translateX(30px) translateY(200px);
-               //               }
-               //        .fade-in {
-               //            animation: fadeIn 10s;
-               //        }
-               //        
-               //        @keyframes fadeIn {
-               //            from {
-               //                opacity: 0;
-               //            }
-               //            to {
-               //                opacity: 1;
-               //            }
-               //        }
+
+                   .project-description {
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                       font-size: 20px;
+                       text-align: center;
+                   } //Contact Section
+                   #slide4 {
+                       background-image: url("/images/slide4/nature-forest-moss-leaves.jpg");
+                       -webkit-background-size: cover;
+                       -moz-background-size: cover;
+                       -o-background-size: cover;
+                       background-size: cover;
+                       z-index: 10;
+                       width: 100%;
+                   }
+
+                   .contact-banner {
+                       font-family: Quarz, Arial, Helvetica, sans-serif;
+                       font-size: 72px;
+                       color: #000000;
+                       text-align: center;
+                       margin: 5%;
+                   }
+
+                   .contact-inner {
+                       font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
+                       font-size: 32px;
+                       color: #000000;
+                       text-align: center;
+                   }
+
+                   .up-btn {
+                       display: block;
+                       width: 50px;
+                       height: 50px;
+                       position: absolute;
+                       bottom: 25px;
+                       left: 50%;
+                       margin-left: -25px;
+                       background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
+                       background-size: 50px 50px;
+                       background-repeat: no-repeat;
+                       padding-right: 20px;
+                   }
+
+                   .scroll-up {
+                       display: block;
+                       width: 50px;
+                       height: 50px;
+                       position: absolute;
+                       bottom: 25px;
+                       left: 45%;
+                       margin-left: -25px;
+                       background-image: url("https://image.flaticon.com/icons/png/128/60/60640.png");
+                       background-size: 50px 50px;
+                       background-repeat: no-repeat;
+                   }
+
+                   .scroll-dwn {
+                       display: block;
+                       width: 50px;
+                       height: 50px;
+                       position: absolute;
+                       bottom: 25px;
+                       left: 55%;
+                       margin-left: -25px;
+                       background-image: url("http://freevector.co/wp-content/uploads/2009/10/60920-two-down-arrows.png");
+                       background-size: 50px 50px;
+                       background-repeat: no-repeat;
+                   }
+
+                   .contact-links {
+                       width: 10%;
+                       justify-content: center;
+                       text-align: center;
+                       margin: auto;
+                       z-index: 9999;
+                       text-align: center;
+                       margin: 10px;
+                   }
+
+                   .git-link {
+                       margin: auto;
+                       z-index: 9999;
+                       text-align: center;
+                       justify-content: center;
+                   }
+
+                   .linked-in-icon {
+                       margin: auto;
+                       text-align: center;
+                       z-index: 9999;
+                   }
+                   /*Tablet Styles*/
+
+                   @media(min-width: 768px) {
+                       .modal-btn {
+                           width: 85%;
+                       }
+                       #transparent-bg {
+                           height: auto;
+                       }
+                       .modal-content {
+                           margin: 8% auto;
+                           width: 900px;
+                           height: 800px;
+                       }
+                   } //
+                   //               //WELCOME PAGE
+                   //               #welcome {
+                   //                   background-color: black;
+                   //               }
+                   //               .fly-in-text {
+                   //                   list-style: none;
+                   //                   position: absolute;
+                   //                   left: 50%;
+                   //                   top: 50%;
+                   //                   transform: translateX(-50%) translateY(-50%);
+                   //               }
+                   //               .fly-in-text li {
+                   //                   display: inline-block;
+                   //                   margin-right: 50px;
+                   //                   font-family: Raleway, Helvetica, Open Sans, Arial;
+                   //                   font-weight: 300;
+                   //                   font-size: 4em;
+                   //                   //        color: #fff;
+                   //                   opacity: 1;
+                   //                   transition: all 5s ease;
+                   //               }
+                   //               .fly-in-text li:last-child {
+                   //                   margin-right: 0;
+                   //               }
+                   //               .fly-in-text.hidden li {
+                   //                   opacity: 0;
+                   //               }
+                   //               .fly-in-text.hidden li:nth-child(1) {
+                   //                   transform: translateX(-200px) translateY(-200px);
+                   //               }
+                   //               .fly-in-text.hidden li:nth-child(2) {
+                   //                   transform: translateX(20px) translateY(100px);
+                   //               }
+                   //               .fly-in-text.hidden li:nth-child(3) {
+                   //                   transform: translateX(-150px) translateY(-80px);
+                   //               }
+                   //               .fly-in-text.hidden li:nth-child(4) {
+                   //                   transform: translateX(10px) translateY(-200px);
+                   //               }
+                   //               .fly-in-text.hidden li:nth-child(5) {
+                   //                   transform: translateX(-300px) translateY(200px);
+                   //               }
+                   //               .fly-in-text.hidden li:nth-child(6) {
+                   //                   transform: translateX(20px) translateY(-20px);
+                   //               }
+                   //               .fly-in-text.hidden li:nth-child(7) {
+                   //                   transform: translateX(30px) translateY(200px);
+                   //               }
+                   //        .fade-in {
+                   //            animation: fadeIn 10s;
+                   //        }
+                   //        
+                   //        @keyframes fadeIn {
+                   //            from {
+                   //                opacity: 0;
+                   //            }
+                   //            to {
+                   //                opacity: 1;
+                   //            }
+                   //        }

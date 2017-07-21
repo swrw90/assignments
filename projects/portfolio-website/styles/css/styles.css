@@ -306,9 +306,9 @@
     }
 
     .modal-content {
-        margin: 8% auto;
-        width: 900px;
-        height: 800px;
+        margin: 30% 2%;
+        width: 378px;
+        /*height: 458px;*/
     }
 
     .modal-backdrop.in {
@@ -461,6 +461,11 @@
         .modal-title {
             width: 80%;
             font-size: 30px;
+        }
+        .modal-content {
+            margin: 8% auto;
+            width: 900px;
+            height: 800px;
         }
         .project-banner {
             font-size: 72px;
