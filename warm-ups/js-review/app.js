@@ -381,3 +381,4 @@
 //     return strs[0].substring(0,minLen);
 // }
 // console.log(longestCommonPrefix(['action', 'actor','active']));
+
